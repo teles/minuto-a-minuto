@@ -1,0 +1,32 @@
+{
+  "schema": "minuto-a-minuto/v1/eleicao",
+  "eleicao": {
+    "id": "2022-2t",
+    "ano": 2022,
+    "turno": 2,
+    "data": "2022-10-30",
+    "cargo": "presidente",
+    "cd_eleicao_tse": "545",
+    "inicio_divulgacao": "2022-10-30T17:00:00-03:00"
+  },
+  "candidatos": [
+    {
+      "numero": "13",
+      "nome_urna": "LULA",
+      "partido": "PT"
+    },
+    {
+      "numero": "22",
+      "nome_urna": "JAIR BOLSONARO",
+      "partido": "PL"
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "/v1/eleicoes/2022-2t/index.json"
+    },
+    "presidente": {
+      "href": "/v1/eleicoes/2022-2t/presidente/br/resumo.json"
+    }
+  }
+}

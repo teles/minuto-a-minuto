@@ -1,0 +1,271 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/v1/schema/eleicao.schema.json",
+  "title": "minuto-a-minuto v1: eleicao",
+  "type": "object",
+  "required": [
+    "schema",
+    "eleicao",
+    "candidatos",
+    "_links"
+  ],
+  "properties": {
+    "schema": {
+      "const": "minuto-a-minuto/v1/eleicao"
+    },
+    "eleicao": {
+      "$ref": "#/$defs/eleicao"
+    },
+    "candidatos": {
+      "$ref": "#/$defs/candidatos"
+    },
+    "_links": {
+      "$ref": "#/$defs/links"
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "eleicao": {
+      "type": "object",
+      "required": [
+        "id",
+        "ano",
+        "turno",
+        "data",
+        "cargo",
+        "cd_eleicao_tse",
+        "inicio_divulgacao"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[0-9]{4}-[12]t$"
+        },
+        "ano": {
+          "type": "integer"
+        },
+        "turno": {
+          "enum": [
+            1,
+            2
+          ]
+        },
+        "data": {
+          "type": "string",
+          "format": "date"
+        },
+        "cargo": {
+          "type": "string"
+        },
+        "cd_eleicao_tse": {
+          "type": "string"
+        },
+        "inicio_divulgacao": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Instante em que o TSE começa a divulgar resultados; origem de seg_desde_inicio."
+        }
+      },
+      "additionalProperties": false
+    },
+    "local": {
+      "type": "object",
+      "required": [
+        "nivel",
+        "sigla",
+        "nome"
+      ],
+      "properties": {
+        "nivel": {
+          "enum": [
+            "br",
+            "uf"
+          ]
+        },
+        "sigla": {
+          "type": "string"
+        },
+        "nome": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "candidatos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "numero",
+          "nome_urna",
+          "partido"
+        ],
+        "properties": {
+          "numero": {
+            "type": "string"
+          },
+          "nome_urna": {
+            "type": "string"
+          },
+          "partido": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "placar": {
+      "type": "object",
+      "description": "Placar acumulado até o instante t (inclusive).",
+      "required": [
+        "t",
+        "seg_desde_inicio",
+        "secoes",
+        "pct_secoes",
+        "aptos",
+        "comparecimento",
+        "votos"
+      ],
+      "properties": {
+        "t": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Horário de Brasília."
+        },
+        "seg_desde_inicio": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Segundos desde eleicao.inicio_divulgacao; eixo para comparar eleições pelo tempo decorrido."
+        },
+        "secoes": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Seções instaladas já totalizadas."
+        },
+        "pct_secoes": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "secoes / total de seções instaladas × 100, arredondado em 4 casas. Calcule a partir dos inteiros se precisar de exatidão."
+        },
+        "aptos": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "comparecimento": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "votos": {
+          "type": "object",
+          "description": "Votos por número de candidato, mais 'branco' e 'nulo'.",
+          "required": [
+            "branco",
+            "nulo"
+          ],
+          "propertyNames": {
+            "pattern": "^([0-9]+|branco|nulo)$"
+          },
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "links": {
+      "type": "object",
+      "required": [
+        "self"
+      ],
+      "additionalProperties": {
+        "oneOf": [
+          {
+            "type": "object",
+            "required": [
+              "href"
+            ],
+            "properties": {
+              "href": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "href"
+              ],
+              "properties": {
+                "href": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        ]
+      }
+    },
+    "proveniencia": {
+      "type": "object",
+      "required": [
+        "fontes",
+        "gerado_por"
+      ],
+      "properties": {
+        "fontes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "url",
+              "sha512"
+            ],
+            "properties": {
+              "url": {
+                "type": "string"
+              },
+              "sha512": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{128}$"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "gerado_por": {
+          "type": "object",
+          "required": [
+            "repositorio",
+            "commit"
+          ],
+          "properties": {
+            "repositorio": {
+              "type": "string"
+            },
+            "commit": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "Último commit que alterou o código do pipeline; null se gerado com código não commitado."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

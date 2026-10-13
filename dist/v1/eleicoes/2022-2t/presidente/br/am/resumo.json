@@ -1,0 +1,77 @@
+{
+  "schema": "minuto-a-minuto/v1/resumo",
+  "eleicao": {
+    "id": "2022-2t",
+    "ano": 2022,
+    "turno": 2,
+    "data": "2022-10-30",
+    "cargo": "presidente",
+    "cd_eleicao_tse": "545",
+    "inicio_divulgacao": "2022-10-30T17:00:00-03:00"
+  },
+  "local": {
+    "nivel": "uf",
+    "sigla": "AM",
+    "nome": "Amazonas"
+  },
+  "candidatos": [
+    {
+      "numero": "13",
+      "nome_urna": "LULA",
+      "partido": "PT"
+    },
+    {
+      "numero": "22",
+      "nome_urna": "JAIR BOLSONARO",
+      "partido": "PL"
+    }
+  ],
+  "resultado": {
+    "t": "2022-10-31T00:18:00-03:00",
+    "seg_desde_inicio": 26280,
+    "secoes": 7453,
+    "pct_secoes": 100.0,
+    "aptos": 2647039,
+    "comparecimento": 2067875,
+    "votos": {
+      "13": 1004991,
+      "22": 961741,
+      "branco": 21594,
+      "nulo": 79549
+    }
+  },
+  "_links": {
+    "self": {
+      "href": "/v1/eleicoes/2022-2t/presidente/br/am/resumo.json"
+    },
+    "serie-minuto": {
+      "href": "/v1/eleicoes/2022-2t/presidente/br/am/serie-minuto.json"
+    },
+    "serie-pct": {
+      "href": "/v1/eleicoes/2022-2t/presidente/br/am/serie-pct.json"
+    },
+    "eleicao": {
+      "href": "/v1/eleicoes/2022-2t/index.json"
+    },
+    "fonte-tse": [
+      {
+        "href": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_AM_311020221535.zip"
+      }
+    ],
+    "parent": {
+      "href": "/v1/eleicoes/2022-2t/presidente/br/resumo.json"
+    }
+  },
+  "_proveniencia": {
+    "fontes": [
+      {
+        "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_AM_311020221535.zip",
+        "sha512": "ddcf25e40104514aefb4f774e588f4e5feb5afa5ffd3a89c3d3f1e32d0c5bd7e9a3482d9ee12737c155f93148c2c5a573a9bf0cd490fb3d4e29e614d8c2b1317"
+      }
+    ],
+    "gerado_por": {
+      "repositorio": "minuto-a-minuto",
+      "commit": "9a5f565e5380a4d39a70c74dff0c4940261b9bb3"
+    }
+  }
+}

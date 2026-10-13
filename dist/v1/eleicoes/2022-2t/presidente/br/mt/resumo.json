@@ -1,0 +1,77 @@
+{
+  "schema": "minuto-a-minuto/v1/resumo",
+  "eleicao": {
+    "id": "2022-2t",
+    "ano": 2022,
+    "turno": 2,
+    "data": "2022-10-30",
+    "cargo": "presidente",
+    "cd_eleicao_tse": "545",
+    "inicio_divulgacao": "2022-10-30T17:00:00-03:00"
+  },
+  "local": {
+    "nivel": "uf",
+    "sigla": "MT",
+    "nome": "Mato Grosso"
+  },
+  "candidatos": [
+    {
+      "numero": "13",
+      "nome_urna": "LULA",
+      "partido": "PT"
+    },
+    {
+      "numero": "22",
+      "nome_urna": "JAIR BOLSONARO",
+      "partido": "PL"
+    }
+  ],
+  "resultado": {
+    "t": "2022-10-30T20:42:00-03:00",
+    "seg_desde_inicio": 13320,
+    "secoes": 7652,
+    "pct_secoes": 100.0,
+    "aptos": 2469797,
+    "comparecimento": 1913231,
+    "votos": {
+      "13": 652786,
+      "22": 1216730,
+      "branco": 16317,
+      "nulo": 27398
+    }
+  },
+  "_links": {
+    "self": {
+      "href": "/v1/eleicoes/2022-2t/presidente/br/mt/resumo.json"
+    },
+    "serie-minuto": {
+      "href": "/v1/eleicoes/2022-2t/presidente/br/mt/serie-minuto.json"
+    },
+    "serie-pct": {
+      "href": "/v1/eleicoes/2022-2t/presidente/br/mt/serie-pct.json"
+    },
+    "eleicao": {
+      "href": "/v1/eleicoes/2022-2t/index.json"
+    },
+    "fonte-tse": [
+      {
+        "href": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_MT_311020221535.zip"
+      }
+    ],
+    "parent": {
+      "href": "/v1/eleicoes/2022-2t/presidente/br/resumo.json"
+    }
+  },
+  "_proveniencia": {
+    "fontes": [
+      {
+        "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_MT_311020221535.zip",
+        "sha512": "39e05e6a12c7c649434058ac71791890c50b0b8f1b0d3f30626e73af6e64c6737e1ef1c28356ae68f980735f6be4cba8ebce844296247375fbc9fb3eecb21f58"
+      }
+    ],
+    "gerado_por": {
+      "repositorio": "minuto-a-minuto",
+      "commit": "9a5f565e5380a4d39a70c74dff0c4940261b9bb3"
+    }
+  }
+}

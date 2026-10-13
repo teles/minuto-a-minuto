@@ -1,0 +1,77 @@
+{
+  "schema": "minuto-a-minuto/v1/resumo",
+  "eleicao": {
+    "id": "2022-2t",
+    "ano": 2022,
+    "turno": 2,
+    "data": "2022-10-30",
+    "cargo": "presidente",
+    "cd_eleicao_tse": "545",
+    "inicio_divulgacao": "2022-10-30T17:00:00-03:00"
+  },
+  "local": {
+    "nivel": "uf",
+    "sigla": "RJ",
+    "nome": "Rio de Janeiro"
+  },
+  "candidatos": [
+    {
+      "numero": "13",
+      "nome_urna": "LULA",
+      "partido": "PT"
+    },
+    {
+      "numero": "22",
+      "nome_urna": "JAIR BOLSONARO",
+      "partido": "PL"
+    }
+  ],
+  "resultado": {
+    "t": "2022-10-30T20:45:00-03:00",
+    "seg_desde_inicio": 13500,
+    "secoes": 34068,
+    "pct_secoes": 100.0,
+    "aptos": 12827044,
+    "comparecimento": 9973822,
+    "votos": {
+      "13": 4156217,
+      "22": 5403894,
+      "branco": 126645,
+      "nulo": 287066
+    }
+  },
+  "_links": {
+    "self": {
+      "href": "/v1/eleicoes/2022-2t/presidente/br/rj/resumo.json"
+    },
+    "serie-minuto": {
+      "href": "/v1/eleicoes/2022-2t/presidente/br/rj/serie-minuto.json"
+    },
+    "serie-pct": {
+      "href": "/v1/eleicoes/2022-2t/presidente/br/rj/serie-pct.json"
+    },
+    "eleicao": {
+      "href": "/v1/eleicoes/2022-2t/index.json"
+    },
+    "fonte-tse": [
+      {
+        "href": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_RJ_311020221535.zip"
+      }
+    ],
+    "parent": {
+      "href": "/v1/eleicoes/2022-2t/presidente/br/resumo.json"
+    }
+  },
+  "_proveniencia": {
+    "fontes": [
+      {
+        "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_RJ_311020221535.zip",
+        "sha512": "4f13e0198cc42ed813058f867789ebb336f8206b13a32684ef7a41fcbe955d846ae0f6456016118be3e808321207225a56fa66d85e68936e9d4e01e027773271"
+      }
+    ],
+    "gerado_por": {
+      "repositorio": "minuto-a-minuto",
+      "commit": "9a5f565e5380a4d39a70c74dff0c4940261b9bb3"
+    }
+  }
+}

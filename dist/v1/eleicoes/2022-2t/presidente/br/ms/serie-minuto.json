@@ -1,0 +1,198 @@
+{
+  "schema": "minuto-a-minuto/v1/serie-minuto",
+  "eleicao": {
+    "id": "2022-2t",
+    "ano": 2022,
+    "turno": 2,
+    "data": "2022-10-30",
+    "cargo": "presidente",
+    "cd_eleicao_tse": "545",
+    "inicio_divulgacao": "2022-10-30T17:00:00-03:00"
+  },
+  "local": {
+    "nivel": "uf",
+    "sigla": "MS",
+    "nome": "Mato Grosso do Sul"
+  },
+  "candidatos": [
+    {
+      "numero": "13",
+      "nome_urna": "LULA",
+      "partido": "PT"
+    },
+    {
+      "numero": "22",
+      "nome_urna": "JAIR BOLSONARO",
+      "partido": "PL"
+    }
+  ],
+  "pontos": [
+    {"t":"2022-10-30T17:00:00-03:00","seg_desde_inicio":0,"secoes":0,"pct_secoes":0.0,"aptos":0,"comparecimento":0,"votos":{"13":0,"22":0,"branco":0,"nulo":0}},
+    {"t":"2022-10-30T17:01:00-03:00","seg_desde_inicio":60,"secoes":0,"pct_secoes":0.0,"aptos":0,"comparecimento":0,"votos":{"13":0,"22":0,"branco":0,"nulo":0}},
+    {"t":"2022-10-30T17:02:00-03:00","seg_desde_inicio":120,"secoes":0,"pct_secoes":0.0,"aptos":0,"comparecimento":0,"votos":{"13":0,"22":0,"branco":0,"nulo":0}},
+    {"t":"2022-10-30T17:03:00-03:00","seg_desde_inicio":180,"secoes":0,"pct_secoes":0.0,"aptos":0,"comparecimento":0,"votos":{"13":0,"22":0,"branco":0,"nulo":0}},
+    {"t":"2022-10-30T17:04:00-03:00","seg_desde_inicio":240,"secoes":0,"pct_secoes":0.0,"aptos":0,"comparecimento":0,"votos":{"13":0,"22":0,"branco":0,"nulo":0}},
+    {"t":"2022-10-30T17:05:00-03:00","seg_desde_inicio":300,"secoes":0,"pct_secoes":0.0,"aptos":0,"comparecimento":0,"votos":{"13":0,"22":0,"branco":0,"nulo":0}},
+    {"t":"2022-10-30T17:06:00-03:00","seg_desde_inicio":360,"secoes":0,"pct_secoes":0.0,"aptos":0,"comparecimento":0,"votos":{"13":0,"22":0,"branco":0,"nulo":0}},
+    {"t":"2022-10-30T17:07:00-03:00","seg_desde_inicio":420,"secoes":0,"pct_secoes":0.0,"aptos":0,"comparecimento":0,"votos":{"13":0,"22":0,"branco":0,"nulo":0}},
+    {"t":"2022-10-30T17:08:00-03:00","seg_desde_inicio":480,"secoes":5,"pct_secoes":0.0723,"aptos":1321,"comparecimento":1041,"votos":{"13":577,"22":403,"branco":14,"nulo":47}},
+    {"t":"2022-10-30T17:09:00-03:00","seg_desde_inicio":540,"secoes":5,"pct_secoes":0.0723,"aptos":1321,"comparecimento":1041,"votos":{"13":577,"22":403,"branco":14,"nulo":47}},
+    {"t":"2022-10-30T17:10:00-03:00","seg_desde_inicio":600,"secoes":8,"pct_secoes":0.1157,"aptos":1990,"comparecimento":1559,"votos":{"13":808,"22":654,"branco":20,"nulo":77}},
+    {"t":"2022-10-30T17:11:00-03:00","seg_desde_inicio":660,"secoes":11,"pct_secoes":0.1591,"aptos":2919,"comparecimento":2287,"votos":{"13":1144,"22":1006,"branco":26,"nulo":111}},
+    {"t":"2022-10-30T17:12:00-03:00","seg_desde_inicio":720,"secoes":15,"pct_secoes":0.217,"aptos":4037,"comparecimento":3196,"votos":{"13":1478,"22":1519,"branco":42,"nulo":157}},
+    {"t":"2022-10-30T17:13:00-03:00","seg_desde_inicio":780,"secoes":33,"pct_secoes":0.4774,"aptos":9075,"comparecimento":7143,"votos":{"13":3080,"22":3668,"branco":87,"nulo":308}},
+    {"t":"2022-10-30T17:14:00-03:00","seg_desde_inicio":840,"secoes":51,"pct_secoes":0.7378,"aptos":14186,"comparecimento":11114,"votos":{"13":4712,"22":5834,"branco":138,"nulo":430}},
+    {"t":"2022-10-30T17:15:00-03:00","seg_desde_inicio":900,"secoes":63,"pct_secoes":0.9115,"aptos":17051,"comparecimento":13381,"votos":{"13":5572,"22":7131,"branco":167,"nulo":511}},
+    {"t":"2022-10-30T17:16:00-03:00","seg_desde_inicio":960,"secoes":89,"pct_secoes":1.2876,"aptos":24319,"comparecimento":19187,"votos":{"13":7712,"22":10536,"branco":240,"nulo":699}},
+    {"t":"2022-10-30T17:17:00-03:00","seg_desde_inicio":1020,"secoes":111,"pct_secoes":1.6059,"aptos":30768,"comparecimento":24268,"votos":{"13":9799,"22":13250,"branco":309,"nulo":910}},
+    {"t":"2022-10-30T17:18:00-03:00","seg_desde_inicio":1080,"secoes":124,"pct_secoes":1.794,"aptos":34774,"comparecimento":27495,"votos":{"13":10854,"22":15262,"branco":366,"nulo":1013}},
+    {"t":"2022-10-30T17:19:00-03:00","seg_desde_inicio":1140,"secoes":169,"pct_secoes":2.445,"aptos":47618,"comparecimento":37815,"votos":{"13":14935,"22":21012,"branco":523,"nulo":1345}},
+    {"t":"2022-10-30T17:20:00-03:00","seg_desde_inicio":1200,"secoes":252,"pct_secoes":3.6458,"aptos":70632,"comparecimento":56116,"votos":{"13":21961,"22":31367,"branco":760,"nulo":2028}},
+    {"t":"2022-10-30T17:21:00-03:00","seg_desde_inicio":1260,"secoes":322,"pct_secoes":4.6586,"aptos":90484,"comparecimento":71609,"votos":{"13":27720,"22":40394,"branco":933,"nulo":2562}},
+    {"t":"2022-10-30T17:22:00-03:00","seg_desde_inicio":1320,"secoes":413,"pct_secoes":5.9751,"aptos":116643,"comparecimento":91944,"votos":{"13":35600,"22":51942,"branco":1156,"nulo":3246}},
+    {"t":"2022-10-30T17:23:00-03:00","seg_desde_inicio":1380,"secoes":498,"pct_secoes":7.2049,"aptos":141253,"comparecimento":111273,"votos":{"13":42672,"22":63307,"branco":1395,"nulo":3899}},
+    {"t":"2022-10-30T17:24:00-03:00","seg_desde_inicio":1440,"secoes":592,"pct_secoes":8.5648,"aptos":168740,"comparecimento":132785,"votos":{"13":50689,"22":75819,"branco":1645,"nulo":4632}},
+    {"t":"2022-10-30T17:25:00-03:00","seg_desde_inicio":1500,"secoes":710,"pct_secoes":10.272,"aptos":202660,"comparecimento":159199,"votos":{"13":60960,"22":90765,"branco":1965,"nulo":5509}},
+    {"t":"2022-10-30T17:26:00-03:00","seg_desde_inicio":1560,"secoes":955,"pct_secoes":13.8166,"aptos":269853,"comparecimento":211546,"votos":{"13":81374,"22":120300,"branco":2609,"nulo":7263}},
+    {"t":"2022-10-30T17:27:00-03:00","seg_desde_inicio":1620,"secoes":1111,"pct_secoes":16.0735,"aptos":313405,"comparecimento":244892,"votos":{"13":94524,"22":139028,"branco":2943,"nulo":8397}},
+    {"t":"2022-10-30T17:28:00-03:00","seg_desde_inicio":1680,"secoes":1267,"pct_secoes":18.3304,"aptos":356200,"comparecimento":278605,"votos":{"13":106532,"22":159303,"branco":3350,"nulo":9420}},
+    {"t":"2022-10-30T17:29:00-03:00","seg_desde_inicio":1740,"secoes":1497,"pct_secoes":21.658,"aptos":421429,"comparecimento":329213,"votos":{"13":126351,"22":187840,"branco":3923,"nulo":11099}},
+    {"t":"2022-10-30T17:30:00-03:00","seg_desde_inicio":1800,"secoes":1651,"pct_secoes":23.886,"aptos":465069,"comparecimento":363257,"votos":{"13":138548,"22":208266,"branco":4323,"nulo":12120}},
+    {"t":"2022-10-30T17:31:00-03:00","seg_desde_inicio":1860,"secoes":1845,"pct_secoes":26.6927,"aptos":519398,"comparecimento":405479,"votos":{"13":154117,"22":233109,"branco":4776,"nulo":13477}},
+    {"t":"2022-10-30T17:32:00-03:00","seg_desde_inicio":1920,"secoes":2074,"pct_secoes":30.0058,"aptos":586283,"comparecimento":456917,"votos":{"13":173661,"22":262628,"branco":5391,"nulo":15237}},
+    {"t":"2022-10-30T17:33:00-03:00","seg_desde_inicio":1980,"secoes":2305,"pct_secoes":33.3478,"aptos":651748,"comparecimento":508118,"votos":{"13":193108,"22":292135,"branco":5978,"nulo":16897}},
+    {"t":"2022-10-30T17:34:00-03:00","seg_desde_inicio":2040,"secoes":2440,"pct_secoes":35.3009,"aptos":691535,"comparecimento":539467,"votos":{"13":204112,"22":311141,"branco":6327,"nulo":17887}},
+    {"t":"2022-10-30T17:35:00-03:00","seg_desde_inicio":2100,"secoes":2601,"pct_secoes":37.6302,"aptos":738676,"comparecimento":576625,"votos":{"13":217558,"22":333280,"branco":6752,"nulo":19035}},
+    {"t":"2022-10-30T17:36:00-03:00","seg_desde_inicio":2160,"secoes":2723,"pct_secoes":39.3953,"aptos":772984,"comparecimento":603439,"votos":{"13":227544,"22":348916,"branco":7079,"nulo":19900}},
+    {"t":"2022-10-30T17:37:00-03:00","seg_desde_inicio":2220,"secoes":2806,"pct_secoes":40.5961,"aptos":796611,"comparecimento":622207,"votos":{"13":234608,"22":359796,"branco":7291,"nulo":20512}},
+    {"t":"2022-10-30T17:38:00-03:00","seg_desde_inicio":2280,"secoes":2920,"pct_secoes":42.2454,"aptos":829344,"comparecimento":647559,"votos":{"13":244217,"22":374542,"branco":7559,"nulo":21241}},
+    {"t":"2022-10-30T17:39:00-03:00","seg_desde_inicio":2340,"secoes":3062,"pct_secoes":44.2998,"aptos":870789,"comparecimento":679708,"votos":{"13":255504,"22":394071,"branco":7910,"nulo":22223}},
+    {"t":"2022-10-30T17:40:00-03:00","seg_desde_inicio":2400,"secoes":3205,"pct_secoes":46.3686,"aptos":912012,"comparecimento":712094,"votos":{"13":267327,"22":413276,"branco":8271,"nulo":23220}},
+    {"t":"2022-10-30T17:41:00-03:00","seg_desde_inicio":2460,"secoes":3315,"pct_secoes":47.9601,"aptos":943508,"comparecimento":736386,"votos":{"13":277011,"22":426745,"branco":8560,"nulo":24070}},
+    {"t":"2022-10-30T17:42:00-03:00","seg_desde_inicio":2520,"secoes":3478,"pct_secoes":50.3183,"aptos":992660,"comparecimento":774575,"votos":{"13":291388,"22":448884,"branco":9058,"nulo":25245}},
+    {"t":"2022-10-30T17:43:00-03:00","seg_desde_inicio":2580,"secoes":3640,"pct_secoes":52.662,"aptos":1041310,"comparecimento":813034,"votos":{"13":305356,"22":471652,"branco":9513,"nulo":26513}},
+    {"t":"2022-10-30T17:44:00-03:00","seg_desde_inicio":2640,"secoes":3769,"pct_secoes":54.5284,"aptos":1079747,"comparecimento":842951,"votos":{"13":315861,"22":489773,"branco":9858,"nulo":27459}},
+    {"t":"2022-10-30T17:45:00-03:00","seg_desde_inicio":2700,"secoes":3907,"pct_secoes":56.5249,"aptos":1120956,"comparecimento":875410,"votos":{"13":327001,"22":509829,"branco":10193,"nulo":28387}},
+    {"t":"2022-10-30T17:46:00-03:00","seg_desde_inicio":2760,"secoes":4091,"pct_secoes":59.1869,"aptos":1175497,"comparecimento":918637,"votos":{"13":342353,"22":535875,"branco":10708,"nulo":29701}},
+    {"t":"2022-10-30T17:47:00-03:00","seg_desde_inicio":2820,"secoes":4175,"pct_secoes":60.4022,"aptos":1199867,"comparecimento":937507,"votos":{"13":350158,"22":546042,"branco":10935,"nulo":30372}},
+    {"t":"2022-10-30T17:48:00-03:00","seg_desde_inicio":2880,"secoes":4297,"pct_secoes":62.1672,"aptos":1236066,"comparecimento":965888,"votos":{"13":360729,"22":562638,"branco":11278,"nulo":31243}},
+    {"t":"2022-10-30T17:49:00-03:00","seg_desde_inicio":2940,"secoes":4446,"pct_secoes":64.3229,"aptos":1280665,"comparecimento":1000409,"votos":{"13":374239,"22":582126,"branco":11609,"nulo":32435}},
+    {"t":"2022-10-30T17:50:00-03:00","seg_desde_inicio":3000,"secoes":4537,"pct_secoes":65.6395,"aptos":1308667,"comparecimento":1021664,"votos":{"13":382324,"22":594240,"branco":11866,"nulo":33234}},
+    {"t":"2022-10-30T17:51:00-03:00","seg_desde_inicio":3060,"secoes":4637,"pct_secoes":67.0862,"aptos":1338257,"comparecimento":1045007,"votos":{"13":391187,"22":607726,"branco":12154,"nulo":33940}},
+    {"t":"2022-10-30T17:52:00-03:00","seg_desde_inicio":3120,"secoes":4734,"pct_secoes":68.4896,"aptos":1364826,"comparecimento":1065370,"votos":{"13":399228,"22":619054,"branco":12407,"nulo":34681}},
+    {"t":"2022-10-30T17:53:00-03:00","seg_desde_inicio":3180,"secoes":4849,"pct_secoes":70.1534,"aptos":1398980,"comparecimento":1091912,"votos":{"13":409861,"22":633740,"branco":12757,"nulo":35554}},
+    {"t":"2022-10-30T17:54:00-03:00","seg_desde_inicio":3240,"secoes":4953,"pct_secoes":71.658,"aptos":1429542,"comparecimento":1114973,"votos":{"13":419141,"22":646438,"branco":13056,"nulo":36338}},
+    {"t":"2022-10-30T17:55:00-03:00","seg_desde_inicio":3300,"secoes":5076,"pct_secoes":73.4375,"aptos":1464167,"comparecimento":1141799,"votos":{"13":429342,"22":661821,"branco":13385,"nulo":37251}},
+    {"t":"2022-10-30T17:56:00-03:00","seg_desde_inicio":3360,"secoes":5175,"pct_secoes":74.8698,"aptos":1491043,"comparecimento":1162142,"votos":{"13":437247,"22":673258,"branco":13611,"nulo":38026}},
+    {"t":"2022-10-30T17:57:00-03:00","seg_desde_inicio":3420,"secoes":5211,"pct_secoes":75.3906,"aptos":1500826,"comparecimento":1169358,"votos":{"13":440132,"22":677236,"branco":13700,"nulo":38290}},
+    {"t":"2022-10-30T17:58:00-03:00","seg_desde_inicio":3480,"secoes":5264,"pct_secoes":76.1574,"aptos":1516140,"comparecimento":1180959,"votos":{"13":444659,"22":683882,"branco":13797,"nulo":38621}},
+    {"t":"2022-10-30T17:59:00-03:00","seg_desde_inicio":3540,"secoes":5340,"pct_secoes":77.2569,"aptos":1537108,"comparecimento":1197550,"votos":{"13":450602,"22":693778,"branco":14015,"nulo":39155}},
+    {"t":"2022-10-30T18:00:00-03:00","seg_desde_inicio":3600,"secoes":5397,"pct_secoes":78.0816,"aptos":1554009,"comparecimento":1210960,"votos":{"13":455717,"22":701465,"branco":14188,"nulo":39590}},
+    {"t":"2022-10-30T18:01:00-03:00","seg_desde_inicio":3660,"secoes":5454,"pct_secoes":78.9062,"aptos":1570278,"comparecimento":1223176,"votos":{"13":460716,"22":708134,"branco":14305,"nulo":40021}},
+    {"t":"2022-10-30T18:02:00-03:00","seg_desde_inicio":3720,"secoes":5544,"pct_secoes":80.2083,"aptos":1596594,"comparecimento":1243903,"votos":{"13":468147,"22":720459,"branco":14535,"nulo":40762}},
+    {"t":"2022-10-30T18:03:00-03:00","seg_desde_inicio":3780,"secoes":5638,"pct_secoes":81.5683,"aptos":1624414,"comparecimento":1265859,"votos":{"13":476300,"22":733342,"branco":14782,"nulo":41435}},
+    {"t":"2022-10-30T18:04:00-03:00","seg_desde_inicio":3840,"secoes":5722,"pct_secoes":82.7836,"aptos":1649096,"comparecimento":1284511,"votos":{"13":484866,"22":742451,"branco":14985,"nulo":42209}},
+    {"t":"2022-10-30T18:05:00-03:00","seg_desde_inicio":3900,"secoes":5804,"pct_secoes":83.9699,"aptos":1672679,"comparecimento":1302654,"votos":{"13":492698,"22":751925,"branco":15192,"nulo":42839}},
+    {"t":"2022-10-30T18:06:00-03:00","seg_desde_inicio":3960,"secoes":5846,"pct_secoes":84.5775,"aptos":1684966,"comparecimento":1312257,"votos":{"13":496711,"22":757021,"branco":15341,"nulo":43184}},
+    {"t":"2022-10-30T18:07:00-03:00","seg_desde_inicio":4020,"secoes":5910,"pct_secoes":85.5035,"aptos":1704645,"comparecimento":1328103,"votos":{"13":502902,"22":765898,"branco":15543,"nulo":43760}},
+    {"t":"2022-10-30T18:08:00-03:00","seg_desde_inicio":4080,"secoes":5963,"pct_secoes":86.2703,"aptos":1720136,"comparecimento":1340253,"votos":{"13":507906,"22":772484,"branco":15678,"nulo":44185}},
+    {"t":"2022-10-30T18:09:00-03:00","seg_desde_inicio":4140,"secoes":6034,"pct_secoes":87.2975,"aptos":1741723,"comparecimento":1356636,"votos":{"13":514736,"22":781341,"branco":15872,"nulo":44687}},
+    {"t":"2022-10-30T18:10:00-03:00","seg_desde_inicio":4200,"secoes":6074,"pct_secoes":87.8762,"aptos":1753757,"comparecimento":1366019,"votos":{"13":518236,"22":786773,"branco":15995,"nulo":45015}},
+    {"t":"2022-10-30T18:11:00-03:00","seg_desde_inicio":4260,"secoes":6099,"pct_secoes":88.2378,"aptos":1761097,"comparecimento":1371802,"votos":{"13":520567,"22":789942,"branco":16077,"nulo":45216}},
+    {"t":"2022-10-30T18:12:00-03:00","seg_desde_inicio":4320,"secoes":6139,"pct_secoes":88.8166,"aptos":1773098,"comparecimento":1381121,"votos":{"13":524466,"22":794889,"branco":16199,"nulo":45567}},
+    {"t":"2022-10-30T18:13:00-03:00","seg_desde_inicio":4380,"secoes":6218,"pct_secoes":89.9595,"aptos":1796793,"comparecimento":1399084,"votos":{"13":532479,"22":803926,"branco":16390,"nulo":46289}},
+    {"t":"2022-10-30T18:14:00-03:00","seg_desde_inicio":4440,"secoes":6254,"pct_secoes":90.4803,"aptos":1806870,"comparecimento":1406631,"votos":{"13":535568,"22":808077,"branco":16478,"nulo":46508}},
+    {"t":"2022-10-30T18:15:00-03:00","seg_desde_inicio":4500,"secoes":6287,"pct_secoes":90.9578,"aptos":1816800,"comparecimento":1414138,"votos":{"13":538808,"22":812006,"branco":16568,"nulo":46756}},
+    {"t":"2022-10-30T18:16:00-03:00","seg_desde_inicio":4560,"secoes":6347,"pct_secoes":91.8258,"aptos":1833668,"comparecimento":1427029,"votos":{"13":543926,"22":819242,"branco":16717,"nulo":47144}},
+    {"t":"2022-10-30T18:17:00-03:00","seg_desde_inicio":4620,"secoes":6399,"pct_secoes":92.5781,"aptos":1849347,"comparecimento":1439161,"votos":{"13":548410,"22":826358,"branco":16856,"nulo":47537}},
+    {"t":"2022-10-30T18:18:00-03:00","seg_desde_inicio":4680,"secoes":6438,"pct_secoes":93.1424,"aptos":1861401,"comparecimento":1448019,"votos":{"13":553054,"22":830043,"branco":16942,"nulo":47980}},
+    {"t":"2022-10-30T18:19:00-03:00","seg_desde_inicio":4740,"secoes":6465,"pct_secoes":93.533,"aptos":1869193,"comparecimento":1453882,"votos":{"13":555983,"22":832660,"branco":17011,"nulo":48228}},
+    {"t":"2022-10-30T18:20:00-03:00","seg_desde_inicio":4800,"secoes":6480,"pct_secoes":93.75,"aptos":1873298,"comparecimento":1457004,"votos":{"13":557323,"22":834293,"branco":17049,"nulo":48339}},
+    {"t":"2022-10-30T18:21:00-03:00","seg_desde_inicio":4860,"secoes":6514,"pct_secoes":94.2419,"aptos":1883030,"comparecimento":1464199,"votos":{"13":560446,"22":838048,"branco":17137,"nulo":48568}},
+    {"t":"2022-10-30T18:22:00-03:00","seg_desde_inicio":4920,"secoes":6528,"pct_secoes":94.4444,"aptos":1886572,"comparecimento":1466950,"votos":{"13":561565,"22":839574,"branco":17166,"nulo":48645}},
+    {"t":"2022-10-30T18:23:00-03:00","seg_desde_inicio":4980,"secoes":6543,"pct_secoes":94.6615,"aptos":1891208,"comparecimento":1470536,"votos":{"13":563157,"22":841430,"branco":17207,"nulo":48742}},
+    {"t":"2022-10-30T18:24:00-03:00","seg_desde_inicio":5040,"secoes":6574,"pct_secoes":95.11,"aptos":1900086,"comparecimento":1476950,"votos":{"13":566256,"22":844460,"branco":17293,"nulo":48941}},
+    {"t":"2022-10-30T18:25:00-03:00","seg_desde_inicio":5100,"secoes":6582,"pct_secoes":95.2257,"aptos":1902538,"comparecimento":1478852,"votos":{"13":567089,"22":845458,"branco":17320,"nulo":48985}},
+    {"t":"2022-10-30T18:26:00-03:00","seg_desde_inicio":5160,"secoes":6601,"pct_secoes":95.5006,"aptos":1908550,"comparecimento":1483238,"votos":{"13":568984,"22":847753,"branco":17374,"nulo":49127}},
+    {"t":"2022-10-30T18:27:00-03:00","seg_desde_inicio":5220,"secoes":6623,"pct_secoes":95.8189,"aptos":1915401,"comparecimento":1488496,"votos":{"13":571523,"22":850170,"branco":17419,"nulo":49384}},
+    {"t":"2022-10-30T18:28:00-03:00","seg_desde_inicio":5280,"secoes":6642,"pct_secoes":96.0938,"aptos":1920565,"comparecimento":1492601,"votos":{"13":573143,"22":852477,"branco":17471,"nulo":49510}},
+    {"t":"2022-10-30T18:29:00-03:00","seg_desde_inicio":5340,"secoes":6661,"pct_secoes":96.3686,"aptos":1925991,"comparecimento":1496706,"votos":{"13":575116,"22":854404,"branco":17522,"nulo":49664}},
+    {"t":"2022-10-30T18:30:00-03:00","seg_desde_inicio":5400,"secoes":6702,"pct_secoes":96.9618,"aptos":1937946,"comparecimento":1505614,"votos":{"13":579910,"22":858022,"branco":17601,"nulo":50081}},
+    {"t":"2022-10-30T18:31:00-03:00","seg_desde_inicio":5460,"secoes":6733,"pct_secoes":97.4103,"aptos":1946544,"comparecimento":1512006,"votos":{"13":582957,"22":861048,"branco":17667,"nulo":50334}},
+    {"t":"2022-10-30T18:32:00-03:00","seg_desde_inicio":5520,"secoes":6762,"pct_secoes":97.8299,"aptos":1954524,"comparecimento":1518169,"votos":{"13":585878,"22":863977,"branco":17711,"nulo":50603}},
+    {"t":"2022-10-30T18:33:00-03:00","seg_desde_inicio":5580,"secoes":6792,"pct_secoes":98.2639,"aptos":1962234,"comparecimento":1523892,"votos":{"13":588267,"22":867059,"branco":17766,"nulo":50800}},
+    {"t":"2022-10-30T18:34:00-03:00","seg_desde_inicio":5640,"secoes":6810,"pct_secoes":98.5243,"aptos":1967297,"comparecimento":1527698,"votos":{"13":589846,"22":869118,"branco":17810,"nulo":50924}},
+    {"t":"2022-10-30T18:35:00-03:00","seg_desde_inicio":5700,"secoes":6824,"pct_secoes":98.7269,"aptos":1971080,"comparecimento":1530543,"votos":{"13":591340,"22":870348,"branco":17836,"nulo":51019}},
+    {"t":"2022-10-30T18:36:00-03:00","seg_desde_inicio":5760,"secoes":6825,"pct_secoes":98.7413,"aptos":1971342,"comparecimento":1530742,"votos":{"13":591419,"22":870458,"branco":17842,"nulo":51023}},
+    {"t":"2022-10-30T18:37:00-03:00","seg_desde_inicio":5820,"secoes":6829,"pct_secoes":98.7992,"aptos":1972275,"comparecimento":1531467,"votos":{"13":591767,"22":870801,"branco":17849,"nulo":51050}},
+    {"t":"2022-10-30T18:38:00-03:00","seg_desde_inicio":5880,"secoes":6846,"pct_secoes":99.0451,"aptos":1977248,"comparecimento":1535074,"votos":{"13":593525,"22":872501,"branco":17886,"nulo":51162}},
+    {"t":"2022-10-30T18:39:00-03:00","seg_desde_inicio":5940,"secoes":6855,"pct_secoes":99.1753,"aptos":1979760,"comparecimento":1536984,"votos":{"13":594463,"22":873396,"branco":17901,"nulo":51224}},
+    {"t":"2022-10-30T18:40:00-03:00","seg_desde_inicio":6000,"secoes":6873,"pct_secoes":99.4358,"aptos":1985347,"comparecimento":1541435,"votos":{"13":596200,"22":875911,"branco":17964,"nulo":51360}},
+    {"t":"2022-10-30T18:41:00-03:00","seg_desde_inicio":6060,"secoes":6877,"pct_secoes":99.4936,"aptos":1986265,"comparecimento":1542139,"votos":{"13":596588,"22":876202,"branco":17968,"nulo":51381}},
+    {"t":"2022-10-30T18:42:00-03:00","seg_desde_inicio":6120,"secoes":6888,"pct_secoes":99.6528,"aptos":1989669,"comparecimento":1544919,"votos":{"13":597723,"22":877729,"branco":18003,"nulo":51464}},
+    {"t":"2022-10-30T18:43:00-03:00","seg_desde_inicio":6180,"secoes":6892,"pct_secoes":99.7106,"aptos":1990778,"comparecimento":1545833,"votos":{"13":598011,"22":878317,"branco":18017,"nulo":51488}},
+    {"t":"2022-10-30T18:44:00-03:00","seg_desde_inicio":6240,"secoes":6892,"pct_secoes":99.7106,"aptos":1990778,"comparecimento":1545833,"votos":{"13":598011,"22":878317,"branco":18017,"nulo":51488}},
+    {"t":"2022-10-30T18:45:00-03:00","seg_desde_inicio":6300,"secoes":6893,"pct_secoes":99.7251,"aptos":1991025,"comparecimento":1546026,"votos":{"13":598097,"22":878410,"branco":18019,"nulo":51500}},
+    {"t":"2022-10-30T18:46:00-03:00","seg_desde_inicio":6360,"secoes":6893,"pct_secoes":99.7251,"aptos":1991025,"comparecimento":1546026,"votos":{"13":598097,"22":878410,"branco":18019,"nulo":51500}},
+    {"t":"2022-10-30T18:47:00-03:00","seg_desde_inicio":6420,"secoes":6894,"pct_secoes":99.7396,"aptos":1991282,"comparecimento":1546207,"votos":{"13":598196,"22":878483,"branco":18019,"nulo":51509}},
+    {"t":"2022-10-30T18:48:00-03:00","seg_desde_inicio":6480,"secoes":6897,"pct_secoes":99.783,"aptos":1991860,"comparecimento":1546651,"votos":{"13":598430,"22":878673,"branco":18023,"nulo":51525}},
+    {"t":"2022-10-30T18:49:00-03:00","seg_desde_inicio":6540,"secoes":6898,"pct_secoes":99.7975,"aptos":1992112,"comparecimento":1546851,"votos":{"13":598506,"22":878790,"branco":18025,"nulo":51530}},
+    {"t":"2022-10-30T18:50:00-03:00","seg_desde_inicio":6600,"secoes":6901,"pct_secoes":99.8409,"aptos":1992919,"comparecimento":1547466,"votos":{"13":598778,"22":879096,"branco":18032,"nulo":51560}},
+    {"t":"2022-10-30T18:51:00-03:00","seg_desde_inicio":6660,"secoes":6901,"pct_secoes":99.8409,"aptos":1992919,"comparecimento":1547466,"votos":{"13":598778,"22":879096,"branco":18032,"nulo":51560}},
+    {"t":"2022-10-30T18:52:00-03:00","seg_desde_inicio":6720,"secoes":6902,"pct_secoes":99.8553,"aptos":1993259,"comparecimento":1547736,"votos":{"13":598854,"22":879276,"branco":18035,"nulo":51571}},
+    {"t":"2022-10-30T18:53:00-03:00","seg_desde_inicio":6780,"secoes":6903,"pct_secoes":99.8698,"aptos":1993534,"comparecimento":1547942,"votos":{"13":598916,"22":879411,"branco":18038,"nulo":51577}},
+    {"t":"2022-10-30T18:54:00-03:00","seg_desde_inicio":6840,"secoes":6905,"pct_secoes":99.8987,"aptos":1994210,"comparecimento":1548489,"votos":{"13":599120,"22":879731,"branco":18043,"nulo":51595}},
+    {"t":"2022-10-30T18:55:00-03:00","seg_desde_inicio":6900,"secoes":6908,"pct_secoes":99.9421,"aptos":1995112,"comparecimento":1549177,"votos":{"13":599337,"22":880161,"branco":18051,"nulo":51628}},
+    {"t":"2022-10-30T18:56:00-03:00","seg_desde_inicio":6960,"secoes":6908,"pct_secoes":99.9421,"aptos":1995112,"comparecimento":1549177,"votos":{"13":599337,"22":880161,"branco":18051,"nulo":51628}},
+    {"t":"2022-10-30T18:57:00-03:00","seg_desde_inicio":7020,"secoes":6910,"pct_secoes":99.9711,"aptos":1995702,"comparecimento":1549594,"votos":{"13":599454,"22":880435,"branco":18057,"nulo":51648}},
+    {"t":"2022-10-30T18:58:00-03:00","seg_desde_inicio":7080,"secoes":6910,"pct_secoes":99.9711,"aptos":1995702,"comparecimento":1549594,"votos":{"13":599454,"22":880435,"branco":18057,"nulo":51648}},
+    {"t":"2022-10-30T18:59:00-03:00","seg_desde_inicio":7140,"secoes":6911,"pct_secoes":99.9855,"aptos":1996000,"comparecimento":1549817,"votos":{"13":599520,"22":880580,"branco":18061,"nulo":51656}},
+    {"t":"2022-10-30T19:00:00-03:00","seg_desde_inicio":7200,"secoes":6911,"pct_secoes":99.9855,"aptos":1996000,"comparecimento":1549817,"votos":{"13":599520,"22":880580,"branco":18061,"nulo":51656}},
+    {"t":"2022-10-30T19:01:00-03:00","seg_desde_inicio":7260,"secoes":6911,"pct_secoes":99.9855,"aptos":1996000,"comparecimento":1549817,"votos":{"13":599520,"22":880580,"branco":18061,"nulo":51656}},
+    {"t":"2022-10-30T19:02:00-03:00","seg_desde_inicio":7320,"secoes":6911,"pct_secoes":99.9855,"aptos":1996000,"comparecimento":1549817,"votos":{"13":599520,"22":880580,"branco":18061,"nulo":51656}},
+    {"t":"2022-10-30T19:03:00-03:00","seg_desde_inicio":7380,"secoes":6911,"pct_secoes":99.9855,"aptos":1996000,"comparecimento":1549817,"votos":{"13":599520,"22":880580,"branco":18061,"nulo":51656}},
+    {"t":"2022-10-30T19:04:00-03:00","seg_desde_inicio":7440,"secoes":6911,"pct_secoes":99.9855,"aptos":1996000,"comparecimento":1549817,"votos":{"13":599520,"22":880580,"branco":18061,"nulo":51656}},
+    {"t":"2022-10-30T19:05:00-03:00","seg_desde_inicio":7500,"secoes":6911,"pct_secoes":99.9855,"aptos":1996000,"comparecimento":1549817,"votos":{"13":599520,"22":880580,"branco":18061,"nulo":51656}},
+    {"t":"2022-10-30T19:06:00-03:00","seg_desde_inicio":7560,"secoes":6911,"pct_secoes":99.9855,"aptos":1996000,"comparecimento":1549817,"votos":{"13":599520,"22":880580,"branco":18061,"nulo":51656}},
+    {"t":"2022-10-30T19:07:00-03:00","seg_desde_inicio":7620,"secoes":6911,"pct_secoes":99.9855,"aptos":1996000,"comparecimento":1549817,"votos":{"13":599520,"22":880580,"branco":18061,"nulo":51656}},
+    {"t":"2022-10-30T19:08:00-03:00","seg_desde_inicio":7680,"secoes":6911,"pct_secoes":99.9855,"aptos":1996000,"comparecimento":1549817,"votos":{"13":599520,"22":880580,"branco":18061,"nulo":51656}},
+    {"t":"2022-10-30T19:09:00-03:00","seg_desde_inicio":7740,"secoes":6911,"pct_secoes":99.9855,"aptos":1996000,"comparecimento":1549817,"votos":{"13":599520,"22":880580,"branco":18061,"nulo":51656}},
+    {"t":"2022-10-30T19:10:00-03:00","seg_desde_inicio":7800,"secoes":6911,"pct_secoes":99.9855,"aptos":1996000,"comparecimento":1549817,"votos":{"13":599520,"22":880580,"branco":18061,"nulo":51656}},
+    {"t":"2022-10-30T19:11:00-03:00","seg_desde_inicio":7860,"secoes":6911,"pct_secoes":99.9855,"aptos":1996000,"comparecimento":1549817,"votos":{"13":599520,"22":880580,"branco":18061,"nulo":51656}},
+    {"t":"2022-10-30T19:12:00-03:00","seg_desde_inicio":7920,"secoes":6912,"pct_secoes":100.0,"aptos":1996066,"comparecimento":1549873,"votos":{"13":599547,"22":880606,"branco":18062,"nulo":51658}}
+  ],
+  "_links": {
+    "self": {
+      "href": "/v1/eleicoes/2022-2t/presidente/br/ms/serie-minuto.json"
+    },
+    "serie-minuto": {
+      "href": "/v1/eleicoes/2022-2t/presidente/br/ms/serie-minuto.json"
+    },
+    "serie-pct": {
+      "href": "/v1/eleicoes/2022-2t/presidente/br/ms/serie-pct.json"
+    },
+    "eleicao": {
+      "href": "/v1/eleicoes/2022-2t/index.json"
+    },
+    "fonte-tse": [
+      {
+        "href": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_MS_311020221535.zip"
+      }
+    ],
+    "parent": {
+      "href": "/v1/eleicoes/2022-2t/presidente/br/resumo.json"
+    }
+  },
+  "_proveniencia": {
+    "fontes": [
+      {
+        "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_MS_311020221535.zip",
+        "sha512": "ab4bc86bf2b485926192bc03356493f88c5383126555c66187dac58d1dcf1b45a85a60e7fb60713c8d0a69e18056af835acdb233225f4cda5b879370adc06dbc"
+      }
+    ],
+    "gerado_por": {
+      "repositorio": "minuto-a-minuto",
+      "commit": "9a5f565e5380a4d39a70c74dff0c4940261b9bb3"
+    }
+  }
+}
