@@ -35,6 +35,12 @@
         "name": "eleicao"
       }
     ],
+    "openapi": {
+      "href": "/v1/openapi.json"
+    },
+    "documentacao": {
+      "href": "/docs/"
+    },
     "licenca": {
       "href": "https://creativecommons.org/licenses/by/4.0/deed.pt-br"
     },

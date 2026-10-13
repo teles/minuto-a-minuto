@@ -8,5 +8,11 @@
 /v1/schema/*
   Cache-Control: public, max-age=300
 
+/v1/openapi.json
+  Cache-Control: public, max-age=300
+
+/docs/*
+  Cache-Control: public, max-age=300
+
 /v1/eleicoes/*
   Cache-Control: public, max-age=3600, stale-while-revalidate=86400

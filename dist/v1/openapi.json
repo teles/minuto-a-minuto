@@ -1,0 +1,427 @@
+{
+  "openapi": "3.1.0",
+  "jsonSchemaDialect": "https://json-schema.org/draft/2020-12/schema",
+  "info": {
+    "title": "minuto-a-minuto",
+    "version": "1.0.0",
+    "summary": "Séries da apuração das eleições brasileiras, reconstruídas a partir dos boletins de urna do TSE.",
+    "description": "API estática (somente GET, arquivos JSON e CSV) com o placar da apuração ao longo da noite: minuto a minuto e por % de seções apuradas, para o Brasil e cada UF.\n\nCada JSON traz `$schema` (o JSON Schema que o descreve), `_links` para navegar entre os recursos e `_proveniencia` com as fontes do TSE e seus SHA-512.\n\nNão é um serviço oficial do TSE. CORS liberado para qualquer origem.",
+    "license": {
+      "name": "CC BY 4.0 (dados)",
+      "identifier": "CC-BY-4.0"
+    },
+    "contact": {
+      "name": "minuto-a-minuto",
+      "url": "https://github.com/teles/minuto-a-minuto"
+    }
+  },
+  "externalDocs": {
+    "description": "Método, regras e limites",
+    "url": "https://github.com/teles/minuto-a-minuto/blob/main/docs/metodo.md"
+  },
+  "servers": [
+    {
+      "url": "https://minutoaminuto.pages.dev"
+    }
+  ],
+  "paths": {
+    "/v1/index.json": {
+      "get": {
+        "operationId": "indice",
+        "summary": "Ponto de entrada: eleições disponíveis e schemas",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Índice da API",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Indice"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NaoEncontrado"
+          }
+        }
+      }
+    },
+    "/v1/eleicoes/{eleicao}/index.json": {
+      "get": {
+        "operationId": "eleicao",
+        "summary": "Dados de uma eleição e seus candidatos",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/eleicao"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Eleição",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Eleicao"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NaoEncontrado"
+          }
+        }
+      }
+    },
+    "/v1/eleicoes/{eleicao}/{cargo}/br/resumo.json": {
+      "get": {
+        "operationId": "resumoBrasil",
+        "summary": "Resultado final no Brasil",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/eleicao"
+          },
+          {
+            "$ref": "#/components/parameters/cargo"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Resultado final",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Resumo"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NaoEncontrado"
+          }
+        }
+      }
+    },
+    "/v1/eleicoes/{eleicao}/{cargo}/br/serie-minuto.json": {
+      "get": {
+        "operationId": "serieMinutoBrasil",
+        "summary": "Placar do Brasil minuto a minuto",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/eleicao"
+          },
+          {
+            "$ref": "#/components/parameters/cargo"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Série por minuto",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SerieMinuto"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NaoEncontrado"
+          }
+        },
+        "description": "Placar acumulado a cada minuto, de 17:00 (início da divulgação) até o último boletim. O ponto em `t` inclui todas as seções que entraram no placar até `t`."
+      }
+    },
+    "/v1/eleicoes/{eleicao}/{cargo}/br/serie-pct.json": {
+      "get": {
+        "operationId": "seriePctBrasil",
+        "summary": "Placar do Brasil por % de seções apuradas",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/eleicao"
+          },
+          {
+            "$ref": "#/components/parameters/cargo"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Série por % apurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SeriePct"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NaoEncontrado"
+          }
+        },
+        "description": "Placar no instante em que o % de seções totalizadas atingiu cada marca (0 a 100, a cada `passo`)."
+      }
+    },
+    "/v1/eleicoes/{eleicao}/{cargo}/br/{uf}/resumo.json": {
+      "get": {
+        "operationId": "resumoUf",
+        "summary": "Resultado final de uma UF",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/eleicao"
+          },
+          {
+            "$ref": "#/components/parameters/cargo"
+          },
+          {
+            "$ref": "#/components/parameters/uf"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Resultado final",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Resumo"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NaoEncontrado"
+          }
+        }
+      }
+    },
+    "/v1/eleicoes/{eleicao}/{cargo}/br/{uf}/serie-minuto.json": {
+      "get": {
+        "operationId": "serieMinutoUf",
+        "summary": "Placar de uma UF minuto a minuto",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/eleicao"
+          },
+          {
+            "$ref": "#/components/parameters/cargo"
+          },
+          {
+            "$ref": "#/components/parameters/uf"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Série por minuto",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SerieMinuto"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NaoEncontrado"
+          }
+        },
+        "description": "Placar acumulado a cada minuto, de 17:00 (início da divulgação) até o último boletim. O ponto em `t` inclui todas as seções que entraram no placar até `t`."
+      }
+    },
+    "/v1/eleicoes/{eleicao}/{cargo}/br/{uf}/serie-pct.json": {
+      "get": {
+        "operationId": "seriePctUf",
+        "summary": "Placar de uma UF por % de seções apuradas",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/eleicao"
+          },
+          {
+            "$ref": "#/components/parameters/cargo"
+          },
+          {
+            "$ref": "#/components/parameters/uf"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Série por % apurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SeriePct"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NaoEncontrado"
+          }
+        },
+        "description": "Placar no instante em que o % de seções totalizadas atingiu cada marca (0 a 100, a cada `passo`). O % é o da própria UF."
+      }
+    },
+    "/v1/eleicoes/{eleicao}/{cargo}/br/{uf}/eventos.csv": {
+      "get": {
+        "operationId": "eventosUf",
+        "summary": "Uma linha por seção, na ordem em que entrou no placar",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/eleicao"
+          },
+          {
+            "$ref": "#/components/parameters/cargo"
+          },
+          {
+            "$ref": "#/components/parameters/uf"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "CSV (UTF-8, vírgula). Colunas: `t` (entrada no placar), `recebido` (DT_BU_RECEBIDO do TSE), `uf`, `cd_municipio_tse`, `municipio`, `zona`, `secao`, `tipo_urna`, `aptos`, `comparecimento` e uma coluna `votos_<numero>` por candidato, mais `votos_branco` e `votos_nulo`.",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NaoEncontrado"
+          }
+        }
+      }
+    },
+    "/v1/schema/{nome}.schema.json": {
+      "get": {
+        "operationId": "schema",
+        "summary": "JSON Schema de um tipo de arquivo",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/nome"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "JSON Schema (draft 2020-12)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NaoEncontrado"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "parameters": {
+      "eleicao": {
+        "name": "eleicao",
+        "in": "path",
+        "required": true,
+        "description": "Eleição, no formato `<ano>-<turno>t`.",
+        "schema": {
+          "type": "string",
+          "enum": [
+            "2022-2t"
+          ]
+        }
+      },
+      "cargo": {
+        "name": "cargo",
+        "in": "path",
+        "required": true,
+        "description": "Cargo.",
+        "schema": {
+          "type": "string",
+          "enum": [
+            "presidente"
+          ]
+        }
+      },
+      "uf": {
+        "name": "uf",
+        "in": "path",
+        "required": true,
+        "description": "Sigla da UF em minúsculas; `zz` é o exterior.",
+        "schema": {
+          "type": "string",
+          "enum": [
+            "ac",
+            "al",
+            "am",
+            "ap",
+            "ba",
+            "ce",
+            "df",
+            "es",
+            "go",
+            "ma",
+            "mg",
+            "ms",
+            "mt",
+            "pa",
+            "pb",
+            "pe",
+            "pi",
+            "pr",
+            "rj",
+            "rn",
+            "ro",
+            "rr",
+            "rs",
+            "sc",
+            "se",
+            "sp",
+            "to",
+            "zz"
+          ]
+        }
+      },
+      "nome": {
+        "name": "nome",
+        "in": "path",
+        "required": true,
+        "description": "Tipo de arquivo.",
+        "schema": {
+          "type": "string",
+          "enum": [
+            "resumo",
+            "serie-minuto",
+            "serie-pct",
+            "indice",
+            "eleicao"
+          ]
+        }
+      }
+    },
+    "schemas": {
+      "Indice": {
+        "$ref": "https://minutoaminuto.pages.dev/v1/schema/indice.schema.json"
+      },
+      "Eleicao": {
+        "$ref": "https://minutoaminuto.pages.dev/v1/schema/eleicao.schema.json"
+      },
+      "Resumo": {
+        "$ref": "https://minutoaminuto.pages.dev/v1/schema/resumo.schema.json"
+      },
+      "SerieMinuto": {
+        "$ref": "https://minutoaminuto.pages.dev/v1/schema/serie-minuto.schema.json"
+      },
+      "SeriePct": {
+        "$ref": "https://minutoaminuto.pages.dev/v1/schema/serie-pct.schema.json"
+      }
+    },
+    "responses": {
+      "NaoEncontrado": {
+        "description": "Arquivo inexistente (combinação de parâmetros sem dados)."
+      }
+    }
+  }
+}
