@@ -30,6 +30,10 @@ O TSE divulga o placar ao vivo, mas cada atualização substitui a anterior. Est
 
 Os arquivos ficam em [`dist/`](dist/). Cada JSON indica em `$schema` a URL do JSON Schema que o descreve, e traz `_links` para navegar entre os recursos e `_proveniencia` com as URLs e os SHA-512 das fontes do TSE.
 
+## Exemplo
+
+[`exemplos/codepen-vue`](exemplos/codepen-vue): Vue 3 + Tailwind, com uma linha do tempo para rever a noite da apuração.
+
 ## Garantias
 
 Os dados são gerados por código, nunca editados à mão, e só são aceitos se passarem na conciliação (`tests/`):

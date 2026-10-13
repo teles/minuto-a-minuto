@@ -1,0 +1,81 @@
+<!-- Painel HTML do CodePen. Vue e Tailwind vêm de CDN; o código está no painel JS (pen.js). -->
+<script src="https://cdn.jsdelivr.net/npm/vue@3.5.43/dist/vue.global.prod.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.3.3"></script>
+
+<div id="app" class="min-h-screen bg-slate-50 px-4 py-8 text-slate-800">
+  <div class="mx-auto max-w-3xl space-y-6">
+    <header class="space-y-1">
+      <p class="text-sm font-medium uppercase tracking-wide text-slate-500">Apuração · 2º turno de 2022 · Presidente</p>
+      <h1 class="text-2xl font-bold">Reveja a noite, minuto a minuto</h1>
+      <p class="text-sm text-slate-500">
+        Dados da API
+        <a class="underline" href="https://minutoaminuto.pages.dev/docs/" target="_blank">minuto-a-minuto</a>,
+        reconstruídos a partir dos boletins de urna do TSE.
+      </p>
+    </header>
+
+    <div class="flex flex-wrap items-center gap-3">
+      <select v-model="local" class="rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm">
+        <option v-for="l in locais" :key="l.sigla" :value="l.sigla">{{ l.nome }}</option>
+      </select>
+      <div class="flex overflow-hidden rounded-lg border border-slate-300 text-sm">
+        <button v-for="e in eixos" :key="e.id" @click="trocarEixo(e.id)"
+          :class="['px-3 py-2', eixo === e.id ? 'bg-slate-800 text-white' : 'bg-white hover:bg-slate-100']">
+          {{ e.nome }}
+        </button>
+      </div>
+    </div>
+
+    <p v-if="erro" class="rounded-lg bg-red-50 p-4 text-sm text-red-700">{{ erro }}</p>
+    <p v-else-if="!ponto" class="text-sm text-slate-500">Carregando…</p>
+
+    <template v-else>
+      <section class="rounded-2xl bg-white p-6 shadow-sm">
+        <div class="flex items-baseline justify-between">
+          <p class="text-3xl font-bold tabular-nums">{{ hora(ponto.t) }}</p>
+          <p class="text-sm text-slate-500 tabular-nums">{{ fmtPct(ponto.pct_secoes) }} das seções apuradas</p>
+        </div>
+
+        <div class="mt-6 grid grid-cols-2 gap-4">
+          <div v-for="(c, i) in candidatos" :key="c.numero" :class="i === 1 ? 'text-right' : ''">
+            <p class="text-sm font-medium" :class="cor[i].texto">
+              {{ c.nome_urna }} <span class="text-slate-400">({{ c.partido }})</span>
+              <span v-if="lider === c.numero" class="ml-1 rounded bg-slate-100 px-1.5 py-0.5 text-xs text-slate-600">lidera</span>
+            </p>
+            <p class="text-4xl font-bold tabular-nums" :class="cor[i].texto">{{ fmtPct(pctValidos(c.numero)) }}</p>
+            <p class="text-sm text-slate-500 tabular-nums">{{ fmtNum(ponto.votos[c.numero]) }} votos</p>
+          </div>
+        </div>
+
+        <div class="relative mt-4 flex h-4 overflow-hidden rounded-full bg-slate-100">
+          <div v-for="(c, i) in candidatos" :key="c.numero" :class="cor[i].fundo"
+            :style="{ width: pctValidos(c.numero) + '%' }"></div>
+          <div class="absolute inset-y-0 left-1/2 w-0.5 bg-white"></div>
+        </div>
+      </section>
+
+      <section class="rounded-2xl bg-white p-6 shadow-sm">
+        <p class="mb-2 text-sm font-medium text-slate-500">% dos válidos de {{ candidatos[0].nome_urna }} ao longo da noite</p>
+        <svg viewBox="0 0 600 160" class="w-full" preserveAspectRatio="none">
+          <line x1="0" x2="600" :y1="y(50)" :y2="y(50)" stroke="#cbd5e1" stroke-dasharray="4 4" />
+          <polyline :points="linha" fill="none" stroke="#0f766e" stroke-width="2" />
+          <line :x1="x(indice)" :x2="x(indice)" y1="0" y2="160" stroke="#334155" />
+          <circle :cx="x(indice)" :cy="y(pctValidos(candidatos[0].numero))" r="4" fill="#0f766e" />
+        </svg>
+
+        <div class="mt-4 flex items-center gap-3">
+          <button @click="alternarPlay" class="w-24 rounded-lg bg-slate-800 px-4 py-2 text-sm font-medium text-white">
+            {{ tocando ? 'Pausar' : 'Play' }}
+          </button>
+          <input type="range" min="0" :max="pontos.length - 1" v-model.number="indice" @input="pausar"
+            class="h-2 flex-1 cursor-pointer accent-slate-800" />
+          <select v-model.number="velocidade" class="rounded-lg border border-slate-300 bg-white px-2 py-2 text-sm">
+            <option :value="1">1×</option>
+            <option :value="5">5×</option>
+            <option :value="20">20×</option>
+          </select>
+        </div>
+      </section>
+    </template>
+  </div>
+</div>
