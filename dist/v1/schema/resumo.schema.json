@@ -1,10 +1,10 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "/v1/schema/resumo.schema.json",
+  "$id": "https://minutoaminuto.pages.dev/v1/schema/resumo.schema.json",
   "title": "minuto-a-minuto v1: resumo",
   "type": "object",
   "required": [
-    "schema",
+    "$schema",
     "eleicao",
     "local",
     "candidatos",
@@ -13,8 +13,8 @@
     "resultado"
   ],
   "properties": {
-    "schema": {
-      "const": "minuto-a-minuto/v1/resumo"
+    "$schema": {
+      "const": "https://minutoaminuto.pages.dev/v1/schema/resumo.schema.json"
     },
     "eleicao": {
       "$ref": "#/$defs/eleicao"

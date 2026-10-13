@@ -1,5 +1,5 @@
 {
-  "schema": "minuto-a-minuto/v1/eleicao",
+  "$schema": "https://minutoaminuto.pages.dev/v1/schema/eleicao.schema.json",
   "eleicao": {
     "id": "2022-2t",
     "ano": 2022,

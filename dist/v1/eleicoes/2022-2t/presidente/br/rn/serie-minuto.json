@@ -1,5 +1,5 @@
 {
-  "schema": "minuto-a-minuto/v1/serie-minuto",
+  "$schema": "https://minutoaminuto.pages.dev/v1/schema/serie-minuto.schema.json",
   "eleicao": {
     "id": "2022-2t",
     "ano": 2022,
@@ -248,7 +248,7 @@
     ],
     "gerado_por": {
       "repositorio": "minuto-a-minuto",
-      "commit": "32aa1eec1e018e45739bfb470fcfcbc9ba54bfaf"
+      "commit": "75f7574aca5e8f694c3d9287b0133db2bd3790e3"
     },
     "licenca": {
       "id": "CC-BY-4.0",

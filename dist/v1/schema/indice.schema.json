@@ -1,16 +1,16 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "/v1/schema/indice.schema.json",
+  "$id": "https://minutoaminuto.pages.dev/v1/schema/indice.schema.json",
   "title": "minuto-a-minuto v1: indice",
   "type": "object",
   "required": [
-    "schema",
+    "$schema",
     "eleicoes",
     "_links"
   ],
   "properties": {
-    "schema": {
-      "const": "minuto-a-minuto/v1/indice"
+    "$schema": {
+      "const": "https://minutoaminuto.pages.dev/v1/schema/indice.schema.json"
     },
     "eleicoes": {
       "type": "array",

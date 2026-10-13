@@ -1,5 +1,5 @@
 {
-  "schema": "minuto-a-minuto/v1/indice",
+  "$schema": "https://minutoaminuto.pages.dev/v1/schema/indice.schema.json",
   "eleicoes": [
     {
       "id": "2022-2t",
