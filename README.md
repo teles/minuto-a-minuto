@@ -4,7 +4,7 @@ Séries da apuração das eleições brasileiras ao longo da noite, minuto a min
 
 O TSE divulga o placar ao vivo, mas cada atualização substitui a anterior. Este projeto reconstrói o histórico e o publica como arquivos JSON estáticos, para qualquer pessoa usar.
 
-**API:** https://minutoaminuto.pages.dev/v1/index.json
+**API:** https://minutoaminuto.pages.dev/v1/index.json · **Documentação:** https://minutoaminuto.pages.dev/docs/ · **OpenAPI:** https://minutoaminuto.pages.dev/v1/openapi.json
 
 > Não é um serviço oficial do TSE. Os dados vêm exclusivamente de arquivos públicos do TSE, e cada arquivo gerado aponta para as fontes usadas e seus hashes.
 
@@ -25,6 +25,7 @@ O TSE divulga o placar ao vivo, mas cada atualização substitui a anterior. Est
 /v1/eleicoes/{eleicao}/{cargo}/br/{uf}/...           o mesmo por UF (zz = exterior)
 /v1/eleicoes/{eleicao}/{cargo}/br/{uf}/eventos.csv   uma linha por seção, na ordem em que entrou no placar
 /v1/schema/*.schema.json                             JSON Schema de cada arquivo
+/v1/openapi.json                                     descrição OpenAPI 3.1
 ```
 
 Os arquivos ficam em [`dist/`](dist/). Cada JSON indica em `$schema` a URL do JSON Schema que o descreve, e traz `_links` para navegar entre os recursos e `_proveniencia` com as URLs e os SHA-512 das fontes do TSE.
@@ -39,6 +40,7 @@ Os dados são gerados por código, nunca editados à mão, e só são aceitos se
 - os eventos por seção reagregados reproduzem exatamente as séries;
 - reconstrução conferida com o placar gravado ao vivo na noite da eleição;
 - toda a saída válida contra o JSON Schema;
+- descrição OpenAPI válida e com correspondência exata aos arquivos publicados (todo caminho documentado existe e todo arquivo está documentado);
 - build reproduzível: as mesmas fontes e o mesmo código geram os mesmos bytes.
 
 Regras e limites do método: [`docs/metodo.md`](docs/metodo.md).

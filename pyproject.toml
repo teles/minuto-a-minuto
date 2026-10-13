@@ -8,5 +8,6 @@ dependencies = []
 [dependency-groups]
 dev = [
     "jsonschema>=4.26.0",
+    "openapi-spec-validator>=0.9.0",
     "pytest>=9.1.1",
 ]

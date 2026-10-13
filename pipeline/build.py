@@ -15,7 +15,7 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-from pipeline import bweb, schemas, series
+from pipeline import bweb, openapi, schemas, series
 from pipeline.fetch import MANIFESTOS, RAIZ, RAW
 from pipeline.fontes import ELEICOES, Eleicao
 
@@ -272,9 +272,39 @@ HEADERS = """\
 /v1/schema/*
   Cache-Control: public, max-age=300
 
+/v1/openapi.json
+  Cache-Control: public, max-age=300
+
+/docs/*
+  Cache-Control: public, max-age=300
+
 /v1/eleicoes/*
   Cache-Control: public, max-age=3600, stale-while-revalidate=86400
 """
+
+
+# Raiz do site leva à documentação (formato _redirects do Cloudflare Pages).
+REDIRECTS = "/ /docs/ 302\n"
+
+DOCS_HTML = """\
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>minuto-a-minuto · API</title>
+  <style>body { margin: 0; }</style>
+</head>
+<body>
+  <redoc spec-url="/v1/openapi.json"></redoc>
+  <script src="https://cdn.jsdelivr.net/npm/redoc@2.5.4/bundles/redoc.standalone.js"></script>
+</body>
+</html>
+"""
+
+
+def gerar_openapi() -> dict[str, dict | str]:
+    return {openapi.CAMINHO: openapi.gerar(), "/docs/index.html": DOCS_HTML}
 
 
 def gerar_indice() -> dict[str, dict]:
@@ -292,6 +322,8 @@ def gerar_indice() -> dict[str, dict]:
                     {"href": f"{schemas.URL_BASE}/{nome}.schema.json", "name": nome}
                     for nome in schemas.SCHEMAS
                 ],
+                "openapi": {"href": openapi.CAMINHO},
+                "documentacao": {"href": "/docs/"},
                 "licenca": {"href": LICENCA["url"]},
                 "codigo": {"href": "https://github.com/teles/minuto-a-minuto"},
             },
@@ -307,7 +339,8 @@ def main(eleicao_id: str) -> None:
     escrever(saida)
     escrever(gerar_schemas())
     escrever(gerar_indice())
-    escrever({"/_headers": HEADERS})
+    escrever(gerar_openapi())
+    escrever({"/_headers": HEADERS, "/_redirects": REDIRECTS})
     print(f"{len(saida)} arquivos gerados em {destino.relative_to(RAIZ)}")
 
 
