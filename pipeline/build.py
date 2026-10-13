@@ -257,6 +257,19 @@ def gerar_schemas() -> dict[str, dict]:
     return {f"{schemas.URL_BASE}/{nome}.schema.json": s for nome, s in schemas.SCHEMAS.items()}
 
 
+# Cabeçalhos HTTP dos arquivos publicados (formato _headers do Cloudflare).
+# A borda da Cloudflare invalida o cache a cada deploy; o max-age vale para navegadores.
+HEADERS = """\
+/*
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=300
+  X-Content-Type-Options: nosniff
+
+/v1/eleicoes/*
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+"""
+
+
 def gerar_indice() -> dict[str, dict]:
     """Ponto de entrada da API: lista as eleições configuradas e os schemas."""
     return {
@@ -287,6 +300,7 @@ def main(eleicao_id: str) -> None:
     escrever(saida)
     escrever(gerar_schemas())
     escrever(gerar_indice())
+    escrever({"/_headers": HEADERS})
     print(f"{len(saida)} arquivos gerados em {destino.relative_to(RAIZ)}")
 
 

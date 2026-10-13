@@ -1,0 +1,9 @@
+// Publica dist/ como arquivos estáticos (Workers Static Assets), sem código de Worker.
+{
+  "name": "minuto-a-minuto",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "none"
+  }
+}
