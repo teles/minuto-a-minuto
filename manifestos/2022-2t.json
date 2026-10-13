@@ -1,0 +1,253 @@
+{
+  "eleicao": "2022-2t",
+  "fontes": [
+    {
+      "id": "bweb-AC",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_AC_311020221535.zip",
+      "tipo": "bweb",
+      "sha512": "f600ddb4b770bea09d0b88209b566b4992424fab21821bf20ea5e733a38a4a3d7fa6f5f441897e907a448e870d6d812d9e5bdbbdbb60ab167ca108f248991b2f",
+      "bytes": 538139,
+      "sha512_publicado_pelo_tse": true
+    },
+    {
+      "id": "bweb-AL",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_AL_311020221535.zip",
+      "tipo": "bweb",
+      "sha512": "848c9ac64aec5a4fbe3bba968df7a6a758d0d9c09f245d761c853f97ee08c67f1108270fec9e8551094ca42b830b6ed98a1daf5730dbee5b53256d26767b6c67",
+      "bytes": 1341316,
+      "sha512_publicado_pelo_tse": true
+    },
+    {
+      "id": "bweb-AM",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_AM_311020221535.zip",
+      "tipo": "bweb",
+      "sha512": "ddcf25e40104514aefb4f774e588f4e5feb5afa5ffd3a89c3d3f1e32d0c5bd7e9a3482d9ee12737c155f93148c2c5a573a9bf0cd490fb3d4e29e614d8c2b1317",
+      "bytes": 1480749,
+      "sha512_publicado_pelo_tse": true
+    },
+    {
+      "id": "bweb-AP",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_AP_311020221535.zip",
+      "tipo": "bweb",
+      "sha512": "3e009ffef5b065099c43834eb3e99da12b0e5493e9c12e6144cc4380ab9a8141ebc18e57b56842941be0defdd44ebe5232a8f5a30f3fd8c30c5e01397aecb468",
+      "bytes": 501229,
+      "sha512_publicado_pelo_tse": true
+    },
+    {
+      "id": "bweb-BA",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_BA_311020221535.zip",
+      "tipo": "bweb",
+      "sha512": "72cba05d279875a7ba482e26394b05e4787d9107e084201b395fa6f9f6a41d9225089f582e467af393bb2382829da51d2372191e6302d39c9a7c4862fb951e8a",
+      "bytes": 5522366,
+      "sha512_publicado_pelo_tse": true
+    },
+    {
+      "id": "bweb-CE",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_CE_311020221535.zip",
+      "tipo": "bweb",
+      "sha512": "0fb2967c97ede37c9c36b9d403ef226b9b6f1a3591733745a68dfe95d64eb513848919b312f98580cbd82265f3175beef949cd859a89edb2569e68bb044ed9ee",
+      "bytes": 2613744,
+      "sha512_publicado_pelo_tse": true
+    },
+    {
+      "id": "bweb-DF",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_DF_311020221535.zip",
+      "tipo": "bweb",
+      "sha512": "244c900a4a54de3d8e371065f6be863c7ea48b39c34681c9d796376aa478b8822bcc3d89f56da9472a683d995e209b67b76ca72c21676101f02ec688d98d9ae6",
+      "bytes": 998403,
+      "sha512_publicado_pelo_tse": true
+    },
+    {
+      "id": "bweb-ES",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_ES_311020221535.zip",
+      "tipo": "bweb",
+      "sha512": "a77de3ca6a2df5fd1601bf5260d4009e35a73e5228e4197fd998816202ff1fa14afdc9c2af203548e94ef580c8fa488e5db0501406f849cf92a60214bb424999",
+      "bytes": 1717142,
+      "sha512_publicado_pelo_tse": true
+    },
+    {
+      "id": "bweb-GO",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_GO_311020221535.zip",
+      "tipo": "bweb",
+      "sha512": "7ea3eacbe607a8f7a9a73d776ab470ce07d2a6a2e5bfe0fa646a9d3102a173fd78be11fa8f614a821555284427738006a97149bef991733ddf4b372fddfb5abf",
+      "bytes": 1786175,
+      "sha512_publicado_pelo_tse": true
+    },
+    {
+      "id": "bweb-MA",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_MA_311020221535.zip",
+      "tipo": "bweb",
+      "sha512": "63c336fb3ac2698572a7085314bf18bada054718f436733ef27f78de86512c846530b04f53deb954d684be0ea1a59762439fce5362dd48f37d0003fd79a2dcef",
+      "bytes": 1965703,
+      "sha512_publicado_pelo_tse": true
+    },
+    {
+      "id": "bweb-MG",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_MG_311020221535.zip",
+      "tipo": "bweb",
+      "sha512": "754605af3dd20dc43fee4d631d6329dd10d695e79e750a71e3b0b2ea4363d3156f617902c98e6adb9be0c332aa0d729d4076dcb1be0eb439555e27a69aa23734",
+      "bytes": 5283911,
+      "sha512_publicado_pelo_tse": true
+    },
+    {
+      "id": "bweb-MS",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_MS_311020221535.zip",
+      "tipo": "bweb",
+      "sha512": "ab4bc86bf2b485926192bc03356493f88c5383126555c66187dac58d1dcf1b45a85a60e7fb60713c8d0a69e18056af835acdb233225f4cda5b879370adc06dbc",
+      "bytes": 1380373,
+      "sha512_publicado_pelo_tse": true
+    },
+    {
+      "id": "bweb-MT",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_MT_311020221535.zip",
+      "tipo": "bweb",
+      "sha512": "39e05e6a12c7c649434058ac71791890c50b0b8f1b0d3f30626e73af6e64c6737e1ef1c28356ae68f980735f6be4cba8ebce844296247375fbc9fb3eecb21f58",
+      "bytes": 1081503,
+      "sha512_publicado_pelo_tse": true
+    },
+    {
+      "id": "bweb-PA",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_PA_311020221535.zip",
+      "tipo": "bweb",
+      "sha512": "ec6db3f1af4a85e02c20e76b67ec2f3c0de8fdec046d45b645c9ce22dfda1126d1201ba582f49d187e4fbdf9ce2f31d57a78f5228fb4f19e905c174f682440fb",
+      "bytes": 2118855,
+      "sha512_publicado_pelo_tse": true
+    },
+    {
+      "id": "bweb-PB",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_PB_311020221535.zip",
+      "tipo": "bweb",
+      "sha512": "6fc4eb0461e6b5b7a86b84c66155f1dc904f8f68ebe6597840f88519a91c3951752acd81a26385151ec22b1ec178efcaad4812b8ef564247985a2524a3ecd859",
+      "bytes": 1806259,
+      "sha512_publicado_pelo_tse": true
+    },
+    {
+      "id": "bweb-PE",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_PE_311020221535.zip",
+      "tipo": "bweb",
+      "sha512": "0d1a9bb8b3867e0b08ba409312a182adca78fa1ed608638f015e3c8e133c1acd0cdcf45f10d811117f45743c4987cc2baf7e214d97b222db896e8e4c26f2b3f1",
+      "bytes": 3469891,
+      "sha512_publicado_pelo_tse": true
+    },
+    {
+      "id": "bweb-PI",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_PI_311020221535.zip",
+      "tipo": "bweb",
+      "sha512": "f7b40fc17067dcc15a96d9a2ed31ffa5247a20c396dedb408352eec56706a2503f25a6b3b6cceaa5852ca12f8af756d6bd523c7df60e0fc894299614626c46f0",
+      "bytes": 1227487,
+      "sha512_publicado_pelo_tse": true
+    },
+    {
+      "id": "bweb-PR",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_PR_311020221535.zip",
+      "tipo": "bweb",
+      "sha512": "5b70471af2fd06c140a83f7679c1d4fb8fdec91583bcb14d6479fab07fc79ad726e34f95a0c109890c38162405457072e0189615b686dad6f7604a44a44679fa",
+      "bytes": 2855742,
+      "sha512_publicado_pelo_tse": true
+    },
+    {
+      "id": "bweb-RJ",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_RJ_311020221535.zip",
+      "tipo": "bweb",
+      "sha512": "4f13e0198cc42ed813058f867789ebb336f8206b13a32684ef7a41fcbe955d846ae0f6456016118be3e808321207225a56fa66d85e68936e9d4e01e027773271",
+      "bytes": 3728044,
+      "sha512_publicado_pelo_tse": true
+    },
+    {
+      "id": "bweb-RN",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_RN_311020221535.zip",
+      "tipo": "bweb",
+      "sha512": "52539e630ab83c8ba5337730f8fe51794321655c4221d8de7091ba3dff6719a18959efa614d6a89057fb7b6f932e62c162242daf8578282943951c5e1822d90c",
+      "bytes": 1090336,
+      "sha512_publicado_pelo_tse": true
+    },
+    {
+      "id": "bweb-RO",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_RO_311020221535.zip",
+      "tipo": "bweb",
+      "sha512": "2515ea281f3588a3085a4d2e115405d0d9bbb6c9ae24ba7792728c3ae8c18380691037ad8376322493731700a58decda6df5e6668dae0dc0f853d76b0334f4c4",
+      "bytes": 959055,
+      "sha512_publicado_pelo_tse": true
+    },
+    {
+      "id": "bweb-RR",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_RR_311020221535.zip",
+      "tipo": "bweb",
+      "sha512": "3f70a0a8c118ea06ea98f2756bf9a8901815612db5a49e1b54467fedfcf0c044e5f232c9b12c44f901689188015efc008f539fc007d0259f1bb05c659026995a",
+      "bytes": 450233,
+      "sha512_publicado_pelo_tse": true
+    },
+    {
+      "id": "bweb-RS",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_RS_311020221535.zip",
+      "tipo": "bweb",
+      "sha512": "7d74d6139ea82253aa92e4e18e995df729794ef6b084feb01a76c9787be07170fbced73453c026058f39843156a4520f155b9d5f3b564635be2ec5b1157d66c1",
+      "bytes": 4537987,
+      "sha512_publicado_pelo_tse": true
+    },
+    {
+      "id": "bweb-SC",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_SC_311020221535.zip",
+      "tipo": "bweb",
+      "sha512": "1a0a6ba32a9b589896ca68e6fdc85a8580645ea5af48778cd6bde11159e8691e3f0ff94c3ffc1b1c28aa311889a5704a304c2efe67a6bec5affc6ff55aeea352",
+      "bytes": 2776735,
+      "sha512_publicado_pelo_tse": true
+    },
+    {
+      "id": "bweb-SE",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_SE_311020221535.zip",
+      "tipo": "bweb",
+      "sha512": "48af31eccdb502d19e77e3be308300bc3aa2298a9fcea6a3b6753d1e65f250c49700a8cfe4face3b58f4ef10fddd4e5817c31dd148d3fd5e54f1cf00daf2be06",
+      "bytes": 1168873,
+      "sha512_publicado_pelo_tse": true
+    },
+    {
+      "id": "bweb-SP",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_SP_311020221535.zip",
+      "tipo": "bweb",
+      "sha512": "5ebcaf759f988b7d8ec844cff4eb057a5832b4f3b25c32af66fb4767a0ad230b38485172df4698f4de66470a8e1f907c0cf3cf36a27677d50b36c778bdf50168",
+      "bytes": 16096583,
+      "sha512_publicado_pelo_tse": true
+    },
+    {
+      "id": "bweb-TO",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_TO_311020221535.zip",
+      "tipo": "bweb",
+      "sha512": "f084a9785026fcbcf3b0b7a25eea0252c3acfc219e74b488fbdff9f903cd6b5f569e14a1fbe16beec87fdb1fd09580ef54787affb70662c14012f5faa44812cc",
+      "bytes": 721111,
+      "sha512_publicado_pelo_tse": true
+    },
+    {
+      "id": "bweb-ZZ",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_ZZ_311020221535.zip",
+      "tipo": "bweb",
+      "sha512": "49b12f6c2087fa3c4a379cd658e36c4f15c3588130b474d60b37a9e1e8a182ef8cf581094707801cc63d4c29fe0f69e4f2ad76086ff49b2ff81595aa7a3a0236",
+      "bytes": 433558,
+      "sha512_publicado_pelo_tse": true
+    },
+    {
+      "id": "detalhe-2022",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/detalhe_votacao_munzona/detalhe_votacao_munzona_2022.zip",
+      "tipo": "detalhe",
+      "sha512": "c1b20ba952b3f52aed749cc8093929f86e5d3e0842f60e16b757e99f18a0f69ae003a21505422e1d5ccf431df7c4ed67ba6b451d6d9842b722733711e4bd27e9",
+      "bytes": 4434016,
+      "sha512_publicado_pelo_tse": false
+    },
+    {
+      "id": "munzona-2022",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_munzona/votacao_candidato_munzona_2022.zip",
+      "tipo": "munzona",
+      "sha512": "9ae993843a7644e6ef90b3f0a2fcf2a249ae184e4decfe674543b97a65b19ec74afef352f29f62508b0c8236a1dfd8205b6931eb1c77e9f8fc1aff67e2bd14be",
+      "bytes": 575338189,
+      "sha512_publicado_pelo_tse": false
+    },
+    {
+      "id": "wcota-br",
+      "url": "https://raw.githubusercontent.com/wcota/br_eleicoes_2022_2T/f2a869e104fa5a2e3fdcdb594a9ad66326db2605/br.csv",
+      "tipo": "terceiro",
+      "sha512": "4a4fdf4a60c1bc8b23a3898de61d3a69558359639e9f120fccb58ce6f028ffa8e7cc76237d59157192ad613fb1b27f6dd2dccb244ed3cc86545f5efdc00e0b29",
+      "bytes": 50377,
+      "sha512_publicado_pelo_tse": false
+    }
+  ]
+}
