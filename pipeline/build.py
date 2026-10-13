@@ -259,11 +259,18 @@ def gerar_schemas() -> dict[str, dict]:
 
 # Cabeçalhos HTTP dos arquivos publicados (formato _headers do Cloudflare).
 # A borda da Cloudflare invalida o cache a cada deploy; o max-age vale para navegadores.
+# Regras que casam com o mesmo arquivo somam cabeçalhos, por isso cada Cache-Control
+# fica numa regra que não se sobrepõe às outras.
 HEADERS = """\
 /*
   Access-Control-Allow-Origin: *
-  Cache-Control: public, max-age=300
   X-Content-Type-Options: nosniff
+
+/v1/index.json
+  Cache-Control: public, max-age=300
+
+/v1/schema/*
+  Cache-Control: public, max-age=300
 
 /v1/eleicoes/*
   Cache-Control: public, max-age=3600, stale-while-revalidate=86400
