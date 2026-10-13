@@ -9,7 +9,12 @@
       "bytes": 538139,
       "sha512_publicado_pelo_tse": true,
       "etag": "\"8361b-5ec594f9c6899\"",
-      "last_modified": "Mon, 31 Oct 2022 19:06:55 GMT"
+      "last_modified": "Mon, 31 Oct 2022 19:06:55 GMT",
+      "extrato": {
+        "arquivo": "bweb_2t_AC_311020221535-presidente.csv.gz",
+        "sha512": "fc3b568b018b493dc882bf3b3b22a97c73617b6282259916eee4f3b7875a026c08083bf0b6378703c485f99dd01f9aeeb2156b3b87ed8cd8f1d0afe5db9a4565",
+        "bytes": 55930
+      }
     },
     {
       "id": "bweb-AL",
@@ -19,7 +24,12 @@
       "bytes": 1341316,
       "sha512_publicado_pelo_tse": true,
       "etag": "\"147784-5ec594f9d1091\"",
-      "last_modified": "Mon, 31 Oct 2022 19:06:55 GMT"
+      "last_modified": "Mon, 31 Oct 2022 19:06:55 GMT",
+      "extrato": {
+        "arquivo": "bweb_2t_AL_311020221535-presidente.csv.gz",
+        "sha512": "4902f1a1f4c3491589fce4d4a027f8b84e0bcd6da5e3709fc47bfeb6162a2f9b5aa1549a3aa13b96dd6712a4275c8a4e922e4155a94b7022ec42c2e8941da010",
+        "bytes": 178784
+      }
     },
     {
       "id": "bweb-AM",
@@ -29,7 +39,12 @@
       "bytes": 1480749,
       "sha512_publicado_pelo_tse": true,
       "etag": "\"16982d-5ec594f9d9d32\"",
-      "last_modified": "Mon, 31 Oct 2022 19:06:55 GMT"
+      "last_modified": "Mon, 31 Oct 2022 19:06:55 GMT",
+      "extrato": {
+        "arquivo": "bweb_2t_AM_311020221535-presidente.csv.gz",
+        "sha512": "083a4cd530283d189c2ff04ea785a5c80fef956d426b0356b1b961b12f243f4e4f18e540138fc57a057111c102bde822bdc97da655af63c6bda8004a37019634",
+        "bytes": 198064
+      }
     },
     {
       "id": "bweb-AP",
@@ -39,7 +54,12 @@
       "bytes": 501229,
       "sha512_publicado_pelo_tse": true,
       "etag": "\"7a5ed-5ec594f9ddf9a\"",
-      "last_modified": "Mon, 31 Oct 2022 19:06:55 GMT"
+      "last_modified": "Mon, 31 Oct 2022 19:06:55 GMT",
+      "extrato": {
+        "arquivo": "bweb_2t_AP_311020221535-presidente.csv.gz",
+        "sha512": "325427dd1a1bad55f24f43891cf522beeda19956acfa6dc730fa2f70337fa35cbb3a0d12fc68cfd8955132c1cf99778b3d436373de99b35bf9254163b3f1e2bd",
+        "bytes": 45813
+      }
     },
     {
       "id": "bweb-BA",
@@ -49,7 +69,12 @@
       "bytes": 5522366,
       "sha512_publicado_pelo_tse": true,
       "etag": "\"5443be-5ec594fa1c79e\"",
-      "last_modified": "Mon, 31 Oct 2022 19:06:55 GMT"
+      "last_modified": "Mon, 31 Oct 2022 19:06:55 GMT",
+      "extrato": {
+        "arquivo": "bweb_2t_BA_311020221535-presidente.csv.gz",
+        "sha512": "1fa09fafc7c9c4bfd7cab3df2b25268ea5d5043164d1f84e77d233de911a0fccdeb716f58b7a4014a71a3c1db70a1ab3bd4f39b32fdf7b1007047443b4c01540",
+        "bytes": 940043
+      }
     },
     {
       "id": "bweb-CE",
@@ -59,7 +84,12 @@
       "bytes": 2613744,
       "sha512_publicado_pelo_tse": true,
       "etag": "\"27e1f0-5ec594fa34288\"",
-      "last_modified": "Mon, 31 Oct 2022 19:06:55 GMT"
+      "last_modified": "Mon, 31 Oct 2022 19:06:55 GMT",
+      "extrato": {
+        "arquivo": "bweb_2t_CE_311020221535-presidente.csv.gz",
+        "sha512": "5e2cf02acd7cd6f1646962a1790c28247bde187856a46d8b815615bff761e0737f35b11dcc288fbd827f62e831ec6a09b76e51f7002c9c3b14607227a5064835",
+        "bytes": 608994
+      }
     },
     {
       "id": "bweb-DF",
@@ -69,7 +99,12 @@
       "bytes": 998403,
       "sha512_publicado_pelo_tse": true,
       "etag": "\"f3c03-5ec594fa3ee68\"",
-      "last_modified": "Mon, 31 Oct 2022 19:06:55 GMT"
+      "last_modified": "Mon, 31 Oct 2022 19:06:55 GMT",
+      "extrato": {
+        "arquivo": "bweb_2t_DF_311020221535-presidente.csv.gz",
+        "sha512": "5816a8be1388409b6c9f252ee8d22d4eaa87fae32bc14302a4f5ba0d0d486e48dd31c0946764253a17c63835a37c78a404aa11864ed5c27081eea40c9cde95fe",
+        "bytes": 172359
+      }
     },
     {
       "id": "bweb-ES",
@@ -79,7 +114,12 @@
       "bytes": 1717142,
       "sha512_publicado_pelo_tse": true,
       "etag": "\"1a3396-5ec594fa507a9\"",
-      "last_modified": "Mon, 31 Oct 2022 19:06:56 GMT"
+      "last_modified": "Mon, 31 Oct 2022 19:06:56 GMT",
+      "extrato": {
+        "arquivo": "bweb_2t_ES_311020221535-presidente.csv.gz",
+        "sha512": "fad22d06ab2b60cdd602048f6397eb21bcd9fe47875d8766045b561850efdd86ec3a86357b081c8f7d876ff9a872183fcd9ce99eeeb397ba92e148202036866c",
+        "bytes": 245737
+      }
     },
     {
       "id": "bweb-GO",
@@ -89,7 +129,12 @@
       "bytes": 1786175,
       "sha512_publicado_pelo_tse": true,
       "etag": "\"1b413f-5ec594fa60d62\"",
-      "last_modified": "Mon, 31 Oct 2022 19:06:56 GMT"
+      "last_modified": "Mon, 31 Oct 2022 19:06:56 GMT",
+      "extrato": {
+        "arquivo": "bweb_2t_GO_311020221535-presidente.csv.gz",
+        "sha512": "1b5342e05991cf6bce2b86796bbf722ef58e9eeb9c78ef9accc616b80b3addf64e0873ba40bff38b48586053ce8f7dfd31b15aa55a1c7a3d5b2e7c8c3b65a49f",
+        "bytes": 389513
+      }
     },
     {
       "id": "bweb-MA",
@@ -99,7 +144,12 @@
       "bytes": 1965703,
       "sha512_publicado_pelo_tse": true,
       "etag": "\"1dfe87-5ec594fa75584\"",
-      "last_modified": "Mon, 31 Oct 2022 19:06:56 GMT"
+      "last_modified": "Mon, 31 Oct 2022 19:06:56 GMT",
+      "extrato": {
+        "arquivo": "bweb_2t_MA_311020221535-presidente.csv.gz",
+        "sha512": "8838f62968f224a80d9bb88dc355dc5fe18a526239dacb93cc9d08bc5a94e1fdfb6e13ba54e1f0e6900fd5d9051b239566b8e9949b02fdcf8e96383ed804dbff",
+        "bytes": 445846
+      }
     },
     {
       "id": "bweb-MG",
@@ -109,7 +159,12 @@
       "bytes": 5283911,
       "sha512_publicado_pelo_tse": true,
       "etag": "\"50a047-5ec594faa0cd6\"",
-      "last_modified": "Mon, 31 Oct 2022 19:06:56 GMT"
+      "last_modified": "Mon, 31 Oct 2022 19:06:56 GMT",
+      "extrato": {
+        "arquivo": "bweb_2t_MG_311020221535-presidente.csv.gz",
+        "sha512": "648cd495e6de7753b493f5448e90e81ed74ff6e8b29b3de06407af5544c523d53ac219faa379c5447368e3344f06fde42ed24dae591e172f6cd2a5d64e76bdf4",
+        "bytes": 1354341
+      }
     },
     {
       "id": "bweb-MS",
@@ -119,7 +174,12 @@
       "bytes": 1380373,
       "sha512_publicado_pelo_tse": true,
       "etag": "\"151015-5ec594fab06d7\"",
-      "last_modified": "Mon, 31 Oct 2022 19:06:56 GMT"
+      "last_modified": "Mon, 31 Oct 2022 19:06:56 GMT",
+      "extrato": {
+        "arquivo": "bweb_2t_MS_311020221535-presidente.csv.gz",
+        "sha512": "2f172227c52b5f1e0a180db82ebb60f9e7a5753db6ca6f9c24bc7e1f862ed93b4401b256bee195f256890e701910d5b66c1c4275b1516234f9610761edc73f82",
+        "bytes": 182106
+      }
     },
     {
       "id": "bweb-MT",
@@ -129,7 +189,12 @@
       "bytes": 1081503,
       "sha512_publicado_pelo_tse": true,
       "etag": "\"10809f-5ec594fabb2b8\"",
-      "last_modified": "Mon, 31 Oct 2022 19:06:56 GMT"
+      "last_modified": "Mon, 31 Oct 2022 19:06:56 GMT",
+      "extrato": {
+        "arquivo": "bweb_2t_MT_311020221535-presidente.csv.gz",
+        "sha512": "493393d3db335a424f2efdb7fffde6bacdeb27362dabbd9d4c5efdd6911220fd100598d091f5f8c0eb90dd5ab747792c58dce9b500ea3bce93d53aa98989e96a",
+        "bytes": 206150
+      }
     },
     {
       "id": "bweb-PA",
@@ -139,7 +204,12 @@
       "bytes": 2118855,
       "sha512_publicado_pelo_tse": true,
       "etag": "\"2054c7-5ec594facfec1\"",
-      "last_modified": "Mon, 31 Oct 2022 19:06:56 GMT"
+      "last_modified": "Mon, 31 Oct 2022 19:06:56 GMT",
+      "extrato": {
+        "arquivo": "bweb_2t_PA_311020221535-presidente.csv.gz",
+        "sha512": "a740d461f480ed3ddf4d736fbad148334726d14deb1faacbeb3764411f6081d979f94eed1e40765cffc7b1dda99265c2b3302240520bd95bac99763e1aed71de",
+        "bytes": 484912
+      }
     },
     {
       "id": "bweb-PB",
@@ -149,7 +219,12 @@
       "bytes": 1806259,
       "sha512_publicado_pelo_tse": true,
       "etag": "\"1b8fb3-5ec594fae3f12\"",
-      "last_modified": "Mon, 31 Oct 2022 19:06:56 GMT"
+      "last_modified": "Mon, 31 Oct 2022 19:06:56 GMT",
+      "extrato": {
+        "arquivo": "bweb_2t_PB_311020221535-presidente.csv.gz",
+        "sha512": "80155227c60c2b14b143a9ed579da05cd4c73dfba5f2c364c8dc039a36f6db89c2d0213847e4f9f650f32f7b76a03daa279f88f99d9d5e4ddcd7f7ce8b5c1d37",
+        "bytes": 257901
+      }
     },
     {
       "id": "bweb-PE",
@@ -159,7 +234,12 @@
       "bytes": 3469891,
       "sha512_publicado_pelo_tse": true,
       "etag": "\"34f243-5ec594fb0275c\"",
-      "last_modified": "Mon, 31 Oct 2022 19:06:56 GMT"
+      "last_modified": "Mon, 31 Oct 2022 19:06:56 GMT",
+      "extrato": {
+        "arquivo": "bweb_2t_PE_311020221535-presidente.csv.gz",
+        "sha512": "91c158f27e64d45a43d250031353f951b6b665daa091276b5aed7b18eecf9dc4fa587c20249b138432b6a307045e715cc26bad5e22c0072d60681cb841b7cfdb",
+        "bytes": 552494
+      }
     },
     {
       "id": "bweb-PI",
@@ -169,7 +249,12 @@
       "bytes": 1227487,
       "sha512_publicado_pelo_tse": true,
       "etag": "\"12badf-5ec594fb109ed\"",
-      "last_modified": "Mon, 31 Oct 2022 19:06:56 GMT"
+      "last_modified": "Mon, 31 Oct 2022 19:06:56 GMT",
+      "extrato": {
+        "arquivo": "bweb_2t_PI_311020221535-presidente.csv.gz",
+        "sha512": "3ae61ed5a4d9d331142f614a1db59633cee6f1ea6d85dc6fb238c4dffbc9acf77ae310031f64cf033eecd466503d475d06f589aa736cfcb552c765a81c1ea97f",
+        "bytes": 250423
+      }
     },
     {
       "id": "bweb-PR",
@@ -179,7 +264,12 @@
       "bytes": 2855742,
       "sha512_publicado_pelo_tse": true,
       "etag": "\"2b933e-5ec594fb2a417\"",
-      "last_modified": "Mon, 31 Oct 2022 19:06:56 GMT"
+      "last_modified": "Mon, 31 Oct 2022 19:06:56 GMT",
+      "extrato": {
+        "arquivo": "bweb_2t_PR_311020221535-presidente.csv.gz",
+        "sha512": "386dac5820ee343dc178ccedf85cf1662aa4afd7ecc286420c8a692b545a7adca74615b3da7241eb33227bef864ce6326497c9aed77a0f9247b4697716f675af",
+        "bytes": 681204
+      }
     },
     {
       "id": "bweb-RJ",
@@ -189,7 +279,12 @@
       "bytes": 3728044,
       "sha512_publicado_pelo_tse": true,
       "etag": "\"38e2ac-5ec594fb4f5d9\"",
-      "last_modified": "Mon, 31 Oct 2022 19:06:57 GMT"
+      "last_modified": "Mon, 31 Oct 2022 19:06:57 GMT",
+      "extrato": {
+        "arquivo": "bweb_2t_RJ_311020221535-presidente.csv.gz",
+        "sha512": "48ed28b3a4addb23695c580a05a48ee2b17206b797200bb090ac32ca581da40f2828fd20212be7f4eb81d1023d4cfc28035f945931b5539a05d87c40df70511b",
+        "bytes": 903219
+      }
     },
     {
       "id": "bweb-RN",
@@ -199,7 +294,12 @@
       "bytes": 1090336,
       "sha512_publicado_pelo_tse": true,
       "etag": "\"10a320-5ec594fb5c0fa\"",
-      "last_modified": "Mon, 31 Oct 2022 19:06:57 GMT"
+      "last_modified": "Mon, 31 Oct 2022 19:06:57 GMT",
+      "extrato": {
+        "arquivo": "bweb_2t_RN_311020221535-presidente.csv.gz",
+        "sha512": "11f2ea3d6d214087a395c00f693dd04807df935f0f8e13f95f3c549acd800fc94415c4ae6cd3152f02004304b27caff1fcf99c46ebb44f3548079041468a0a33",
+        "bytes": 208947
+      }
     },
     {
       "id": "bweb-RO",
@@ -209,7 +309,12 @@
       "bytes": 959055,
       "sha512_publicado_pelo_tse": true,
       "etag": "\"ea24f-5ec594fb65182\"",
-      "last_modified": "Mon, 31 Oct 2022 19:06:57 GMT"
+      "last_modified": "Mon, 31 Oct 2022 19:06:57 GMT",
+      "extrato": {
+        "arquivo": "bweb_2t_RO_311020221535-presidente.csv.gz",
+        "sha512": "dcf716bc96c1dda6055c2b488c90e373a2d9123b568303041e0d924ec94d775df6770d5aa42cad8bd84a9772dbc1458467ada1e9969293912b741b753eb8c8bc",
+        "bytes": 111016
+      }
     },
     {
       "id": "bweb-RR",
@@ -219,7 +324,12 @@
       "bytes": 450233,
       "sha512_publicado_pelo_tse": true,
       "etag": "\"6deb9-5ec594fb69003\"",
-      "last_modified": "Mon, 31 Oct 2022 19:06:57 GMT"
+      "last_modified": "Mon, 31 Oct 2022 19:06:57 GMT",
+      "extrato": {
+        "arquivo": "bweb_2t_RR_311020221535-presidente.csv.gz",
+        "sha512": "92783ef4882f1422b7139cadccc3d6f86b1658d2cfe74930eda07984e7636845d14dbac67a7e6c2c5191be4b3d6b6941efe981d236bc00a7264f29d5744c41ed",
+        "bytes": 32735
+      }
     },
     {
       "id": "bweb-RS",
@@ -229,7 +339,12 @@
       "bytes": 4537987,
       "sha512_publicado_pelo_tse": true,
       "etag": "\"453e83-5ec594fb8ed7d\"",
-      "last_modified": "Mon, 31 Oct 2022 19:06:57 GMT"
+      "last_modified": "Mon, 31 Oct 2022 19:06:57 GMT",
+      "extrato": {
+        "arquivo": "bweb_2t_RS_311020221535-presidente.csv.gz",
+        "sha512": "0d5c616ab5ac59f9fb285f980dc770a4b42fbaf25535e85b3872a4c9a16f2ed7e3496b74719f72ad37dbcac43bc1173472ed329b25842840a4899343a614dec0",
+        "bytes": 743305
+      }
     },
     {
       "id": "bweb-SC",
@@ -239,7 +354,12 @@
       "bytes": 2776735,
       "sha512_publicado_pelo_tse": true,
       "etag": "\"2a5e9f-5ec594fba9747\"",
-      "last_modified": "Mon, 31 Oct 2022 19:06:57 GMT"
+      "last_modified": "Mon, 31 Oct 2022 19:06:57 GMT",
+      "extrato": {
+        "arquivo": "bweb_2t_SC_311020221535-presidente.csv.gz",
+        "sha512": "d38c93c73d93d5ba2d137f94012dd59886188292c6d2b0ede00726b4ca9f8512060b2d3cef11cfd49947a3238b66e568e0185a8e6e0f2ad7639108f2997e0135",
+        "bytes": 444592
+      }
     },
     {
       "id": "bweb-SE",
@@ -249,7 +369,12 @@
       "bytes": 1168873,
       "sha512_publicado_pelo_tse": true,
       "etag": "\"11d5e9-5ec594fbb376f\"",
-      "last_modified": "Mon, 31 Oct 2022 19:06:57 GMT"
+      "last_modified": "Mon, 31 Oct 2022 19:06:57 GMT",
+      "extrato": {
+        "arquivo": "bweb_2t_SE_311020221535-presidente.csv.gz",
+        "sha512": "f43a41e689d986fc088203eda3bd622c932e5d6a10892167dead483ad4d199e74827c453f5e0038575eef700e77accd72618f8957db4e1b5f462ae44917e8f56",
+        "bytes": 148976
+      }
     },
     {
       "id": "bweb-SP",
@@ -259,7 +384,12 @@
       "bytes": 16096583,
       "sha512_publicado_pelo_tse": true,
       "etag": "\"f59d47-5ec594fc2f007\"",
-      "last_modified": "Mon, 31 Oct 2022 19:06:57 GMT"
+      "last_modified": "Mon, 31 Oct 2022 19:06:57 GMT",
+      "extrato": {
+        "arquivo": "bweb_2t_SP_311020221535-presidente.csv.gz",
+        "sha512": "95f50f0210923db68fc4564744a6fa16fdc67b8a3a09cdde03a1fb45a5b9ff287c6baa92280aa9292f2ca40c6ab4b2cfdbc625784639369e2adefde99d3e6ea1",
+        "bytes": 2659331
+      }
     },
     {
       "id": "bweb-TO",
@@ -269,7 +399,12 @@
       "bytes": 721111,
       "sha512_publicado_pelo_tse": true,
       "etag": "\"b00d7-5ec594fc351af\"",
-      "last_modified": "Mon, 31 Oct 2022 19:06:57 GMT"
+      "last_modified": "Mon, 31 Oct 2022 19:06:57 GMT",
+      "extrato": {
+        "arquivo": "bweb_2t_TO_311020221535-presidente.csv.gz",
+        "sha512": "a50ced55f4171f5e9d2bcba6d7238c7148d4754ffda561f66d1c37d88def090c6ed381d68f4deb67dc1d55e2d472a91549fd1155b2baee782628358b97f76cfb",
+        "bytes": 104841
+      }
     },
     {
       "id": "bweb-ZZ",
@@ -279,7 +414,12 @@
       "bytes": 433558,
       "sha512_publicado_pelo_tse": true,
       "etag": "\"69d96-5ec594fc3de50\"",
-      "last_modified": "Mon, 31 Oct 2022 19:06:58 GMT"
+      "last_modified": "Mon, 31 Oct 2022 19:06:58 GMT",
+      "extrato": {
+        "arquivo": "bweb_2t_ZZ_311020221535-presidente.csv.gz",
+        "sha512": "5e7ea802d21d73fd6b933e32d5b7eecb51e7f64cf862898e26911347f975e61b0810c9e07a091d43b8eeba900f270b5153242520f2ddb26fdf46e4a032a5e6d4",
+        "bytes": 33823
+      }
     },
     {
       "id": "detalhe-2022",

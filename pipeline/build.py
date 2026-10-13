@@ -1,6 +1,6 @@
 """Gera os JSONs estáticos da API para uma eleição.
 
-Uso: uv run python -m pipeline.build 2022-2t
+Uso: uv run python -m pipeline.build [eleicao ...]   (sem argumentos: todas)
 
 Saída em dist/v1/. Não grava carimbo de data/hora: o mesmo commit com as mesmas
 fontes gera exatamente os mesmos bytes.
@@ -121,9 +121,11 @@ def _fontes(manifesto: dict, ids: set[str]) -> list[dict]:
 def gerar(eleicao: Eleicao) -> dict[str, dict | str]:
     """Retorna {caminho_publicado: objeto_json ou texto CSV}."""
     manifesto = json.loads((MANIFESTOS / f"{eleicao.id}.json").read_text())
-    fontes_bweb = {f.id: RAW / f.destino for f in eleicao.fontes if f.tipo == "bweb"}
+    fontes_bweb = {f.id: RAW / f.extrato for f in eleicao.fontes if f.tipo == "bweb"}
 
-    secoes, candidatos = bweb.ler_varios(list(fontes_bweb.values()), eleicao.cd_cargo)
+    secoes, candidatos = bweb.ler_varios(
+        list(fontes_bweb.values()), eleicao.cd_cargo, frozenset(eleicao.nulos_tecnicos)
+    )
     inicio = datetime.fromisoformat(f"{eleicao.data} {eleicao.inicio_divulgacao}")
     commit = _commit_do_codigo()
 
@@ -167,6 +169,13 @@ def gerar(eleicao: Eleicao) -> dict[str, dict | str]:
             "eleicao": {"href": f"{PREFIXO}/{eleicao.id}/index.json"},
             "fonte-tse": [{"href": f["url"]} for f in _fontes(manifesto, ids_fonte)],
         }
+        # o mesmo local nas outras eleições do mesmo cargo
+        sufixo = caminho.removeprefix(f"{PREFIXO}/{eleicao.id}/")
+        links["compare"] = [
+            {"href": f"{PREFIXO}/{outra.id}/{sufixo}/resumo.json", "name": outra.id}
+            for outra in ELEICOES.values()
+            if outra.id != eleicao.id and outra.cargo == eleicao.cargo
+        ]
         if nivel == "br":
             links["filhos"] = [
                 {"href": f"{caminho}/{uf.lower()}/resumo.json", "name": uf} for uf in sorted(por_uf)
@@ -331,18 +340,20 @@ def gerar_indice() -> dict[str, dict]:
     }
 
 
-def main(eleicao_id: str) -> None:
-    saida = gerar(ELEICOES[eleicao_id])
-    destino = DIST / PREFIXO.lstrip("/") / eleicao_id
-    if destino.exists():
-        shutil.rmtree(destino)
-    escrever(saida)
+def main(ids: list[str]) -> None:
+    """Gera as eleições pedidas (todas, se nenhuma for informada) e os arquivos comuns."""
+    for eleicao_id in ids or list(ELEICOES):
+        saida = gerar(ELEICOES[eleicao_id])
+        destino = DIST / PREFIXO.lstrip("/") / eleicao_id
+        if destino.exists():
+            shutil.rmtree(destino)
+        escrever(saida)
+        print(f"{len(saida)} arquivos gerados em {destino.relative_to(RAIZ)}")
     escrever(gerar_schemas())
     escrever(gerar_indice())
     escrever(gerar_openapi())
     escrever({"/_headers": HEADERS, "/_redirects": REDIRECTS})
-    print(f"{len(saida)} arquivos gerados em {destino.relative_to(RAIZ)}")
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    main(sys.argv[1:])

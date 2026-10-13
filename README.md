@@ -13,6 +13,7 @@ O TSE divulga o placar ao vivo, mas cada atualização substitui a anterior. Est
 | Eleição | Cargo | Níveis |
 |---|---|---|
 | 2022, 2º turno | Presidente | Brasil, UFs e exterior |
+| 2026, 1º turno | Presidente | Brasil, UFs e exterior |
 
 ## Estrutura
 
@@ -28,7 +29,7 @@ O TSE divulga o placar ao vivo, mas cada atualização substitui a anterior. Est
 /v1/openapi.json                                     descrição OpenAPI 3.1
 ```
 
-Os arquivos ficam em [`dist/`](dist/). Cada JSON indica em `$schema` a URL do JSON Schema que o descreve, e traz `_links` para navegar entre os recursos e `_proveniencia` com as URLs e os SHA-512 das fontes do TSE.
+Os arquivos ficam em [`dist/`](dist/). Cada JSON indica em `$schema` a URL do JSON Schema que o descreve, e traz `_links` para navegar entre os recursos (inclusive `compare`, o mesmo local nas outras eleições) e `_proveniencia` com as URLs e os SHA-512 das fontes do TSE.
 
 ## Exemplo
 
@@ -51,7 +52,8 @@ Regras e limites do método: [`docs/metodo.md`](docs/metodo.md).
 
 ## Fontes e verificação contínua
 
-- Uma cópia exata das fontes usadas fica nas releases `fontes-<eleicao>` deste repositório. O build continua reproduzível mesmo que o TSE altere ou remova os arquivos originais.
+- Os boletins de urna do 1º turno trazem todos os cargos e somam gigabytes. O `fetch` confere o original contra o SHA-512 do TSE e grava um extrato determinístico só com as linhas do cargo; o manifesto registra o hash dos dois.
+- Uma cópia exata das fontes usadas pelo build (extratos e datasets oficiais) fica nas releases `fontes-<eleicao>` deste repositório. O build continua reproduzível mesmo que o TSE altere ou remova os arquivos originais.
 - Em cada push, a CI baixa essa cópia, confere os SHA-512 com o manifesto, roda a conciliação e confirma que o `dist/` commitado é exatamente a saída do build.
 - A API publicada é a branch `publicado`. A CI só avança essa branch até um commit do `main` depois que a conciliação e a reprodutibilidade passam nele; a Cloudflare publica a partir dela.
 - Diariamente, um workflow verifica se as fontes mudaram no TSE (hash publicado, ETag, data de modificação e boletins novos no portal) e abre uma issue se algo mudou.
@@ -61,7 +63,7 @@ Regras e limites do método: [`docs/metodo.md`](docs/metodo.md).
 ```sh
 uv run python -m pipeline.fetch 2022-2t             # baixa do TSE e confere os hashes
 uv run python -m pipeline.fetch 2022-2t --arquivo   # ou: baixa a cópia arquivada
-uv run python -m pipeline.build 2022-2t             # gera dist/
+uv run python -m pipeline.build                     # gera dist/ (todas as eleições)
 uv run pytest                                       # conciliação
 ```
 

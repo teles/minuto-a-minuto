@@ -1,0 +1,455 @@
+{
+  "eleicao": "2026-1t",
+  "fontes": [
+    {
+      "id": "bweb-AC",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_AC_051020261403.zip",
+      "tipo": "bweb",
+      "sha512": "c095164588a0ad4f46717e081f51eab226f78365325629124672ba8ea044c8e2266028e8456a9e5188ab763c1556160cc8d175b2aab361c5f81544e393c99ab1",
+      "bytes": 16959055,
+      "sha512_publicado_pelo_tse": true,
+      "etag": "\"102c64f-65d2d7d77e8d2\"",
+      "last_modified": "Tue, 06 Oct 2026 15:17:00 GMT",
+      "extrato": {
+        "arquivo": "bweb_1t_AC_051020261403-presidente.csv.gz",
+        "sha512": "171304819efe34ad13a57129bc95e14c384fe1502f49d59e8f5f25b433de89e80ed32716bf199c0c6604b75c4bfab83f14d782d546a0ebaa12c1112d8cecc4af",
+        "bytes": 196303
+      }
+    },
+    {
+      "id": "bweb-AL",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_AL_051020261403.zip",
+      "tipo": "bweb",
+      "sha512": "dc4340c5d6ff227b6398bd0ed5416a42fac6f182f5775b236e4e5be6358d9eab82ded3ecfe33c8326f0a4caee38bd048635e8f14aff8893fe498de6c641e2b7f",
+      "bytes": 48253491,
+      "sha512_publicado_pelo_tse": true,
+      "etag": "\"2e04a33-65d2dfe391186\"",
+      "last_modified": "Tue, 06 Oct 2026 15:53:00 GMT",
+      "extrato": {
+        "arquivo": "bweb_1t_AL_051020261403-presidente.csv.gz",
+        "sha512": "feec50179b13fc77a5ec959abc7ee8fb762d4374953da19d02dd955f6587e1625fe86ed433adcab521a8d3adcf88587dbb127a3fb90a612a3caf7dfc2e75cbba",
+        "bytes": 724839
+      }
+    },
+    {
+      "id": "bweb-AM",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_AM_051020261403.zip",
+      "tipo": "bweb",
+      "sha512": "143619aaf27787f27435bc6b78961d289ac0bc9ec6683a678cc319fa1d68eef0611aad9e608d7493a100bafe83f46516e3155dc4b3e62717c5870fb992239f5d",
+      "bytes": 77017934,
+      "sha512_publicado_pelo_tse": true,
+      "etag": "\"497334e-65d2dfe3c036c\"",
+      "last_modified": "Tue, 06 Oct 2026 15:53:00 GMT",
+      "extrato": {
+        "arquivo": "bweb_1t_AM_051020261403-presidente.csv.gz",
+        "sha512": "328d581ce9506113e7aae44dfe1c34a4148c31d387532a875fd56fdb686f2f226564967fa927d7f1d6101a688c3876b025884cea97e2ce96cc72fa87b48432fe",
+        "bytes": 802465
+      }
+    },
+    {
+      "id": "bweb-AP",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_AP_051020261403.zip",
+      "tipo": "bweb",
+      "sha512": "bd40faf189a3ba0462d8efc73216bf60480fda36b3e7d6e144b49d05e54e0415494d06a7858ccf4926cd2570059cdf6518b976e6129c243f44cb9708107b0769",
+      "bytes": 16659046,
+      "sha512_publicado_pelo_tse": true,
+      "etag": "\"fe3266-65d2dfdfb5127\"",
+      "last_modified": "Tue, 06 Oct 2026 15:52:56 GMT",
+      "extrato": {
+        "arquivo": "bweb_1t_AP_051020261403-presidente.csv.gz",
+        "sha512": "33d77d947e23a3aff3513e26782f846b0a2e0a75984874128ca8aac3d2d94934480efeb45bde0fd09464376c4345ac7256e535276b0e799ee024b2141a261303",
+        "bytes": 172067
+      }
+    },
+    {
+      "id": "bweb-BA",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_BA_051020261403.zip",
+      "tipo": "bweb",
+      "sha512": "8fc0b0c6e926af2c9554de33d5ed1f7c4d376cc2e1655970e78aa8498c71c7caef3d4a4adfcc2f3c4989c9783d2917f8478404a9789bcccbb9bdc366a8024e5e",
+      "bytes": 324997821,
+      "sha512_publicado_pelo_tse": true,
+      "etag": "\"135f12bd-65d2dfe104074\"",
+      "last_modified": "Tue, 06 Oct 2026 15:52:57 GMT",
+      "extrato": {
+        "arquivo": "bweb_1t_BA_051020261403-presidente.csv.gz",
+        "sha512": "08d34ab05481a285d19ecb41218f373776d7cd41ec4c8368885a2c72b503fd399fa11c21964e1e7b6efa6b256cef0b53e706266fc250ca8783cbfebc11876195",
+        "bytes": 3968471
+      }
+    },
+    {
+      "id": "bweb-CE",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_CE_051020261403.zip",
+      "tipo": "bweb",
+      "sha512": "0ac4f8dbcd6eb06ed3e67b71d64fdb36909a885da32e765c9ae966c02ed48dcee57f82b3a95dfa3b1dd586e7f057ed556a991fe9e2dc4ae117e72caa2359fabf",
+      "bytes": 203005857,
+      "sha512_publicado_pelo_tse": true,
+      "etag": "\"c199fa1-65d2e05279460\"",
+      "last_modified": "Tue, 06 Oct 2026 15:54:56 GMT",
+      "extrato": {
+        "arquivo": "bweb_1t_CE_051020261403-presidente.csv.gz",
+        "sha512": "e3a9f27f2af0b8bd2c3cb44a0cf1cc4bdcd4f422724c0c2acc8b7a1d2fe87a1569b6f8941e8ecc23a083e501105c285a0170fc79da81e00fdf82f006f00cd96b",
+        "bytes": 2443947
+      }
+    },
+    {
+      "id": "bweb-DF",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_DF_051020261403.zip",
+      "tipo": "bweb",
+      "sha512": "10916bdfc73018dab34d21dbb1f7fa49d33921a6d8de9e283a2b4b6d8d7ce6c02af4e5cff948f17cab726195b372ee84f2177ab5756dff04e0f2d71c759d4572",
+      "bytes": 77026962,
+      "sha512_publicado_pelo_tse": true,
+      "etag": "\"4975692-65d2dfd7099f0\"",
+      "last_modified": "Tue, 06 Oct 2026 15:52:47 GMT",
+      "extrato": {
+        "arquivo": "bweb_1t_DF_051020261403-presidente.csv.gz",
+        "sha512": "cb9e3b26092e63a20dfb4c7df2216530a6c907b83d0dba1b77af0c156dfe3ec54dd53495e891259bee244f91c232ded25c734e6f6435e5e3eefad5d182d96997",
+        "bytes": 658558
+      }
+    },
+    {
+      "id": "bweb-ES",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_ES_051020261403.zip",
+      "tipo": "bweb",
+      "sha512": "fb3dc71fccd1528f091ead2caa11a6182e25d581aaaf565519bcd6884e5827d868a60dad74a77df51593a2bcba692a0bc4dc777e6fa6782a27cf19782d8c7f31",
+      "bytes": 81978606,
+      "sha512_publicado_pelo_tse": true,
+      "etag": "\"4e2e4ee-65d2dfd8f3d93\"",
+      "last_modified": "Tue, 06 Oct 2026 15:52:49 GMT",
+      "extrato": {
+        "arquivo": "bweb_1t_ES_051020261403-presidente.csv.gz",
+        "sha512": "8e6677711e37378a9254ec28bfce895748c6ca7c612da10e8f5f193b30c5445c1c859066e50353e7fd3c04971cb29ac7fefe1d3592d68351628394f923811641",
+        "bytes": 1029332
+      }
+    },
+    {
+      "id": "bweb-GO",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_GO_051020261403.zip",
+      "tipo": "bweb",
+      "sha512": "995aa51719659a4f22f4e9a9a904f545be3e57112fd204ca35dc697a76950222c244477284b28fb74bde65d45df3f20855f2c40fe436f33afc885917fc73c394",
+      "bytes": 157210218,
+      "sha512_publicado_pelo_tse": true,
+      "etag": "\"95ed66a-65d2dfd918f51\"",
+      "last_modified": "Tue, 06 Oct 2026 15:52:49 GMT",
+      "extrato": {
+        "arquivo": "bweb_1t_GO_051020261403-presidente.csv.gz",
+        "sha512": "a762d89ea801a880efaef702a0d72370454ffbdd55d8b03ba27907da0b72c415459ab57508a8c74a417ae9a83991bf570d4cdf76858edabc1d3c0384aaf16281",
+        "bytes": 1645811
+      }
+    },
+    {
+      "id": "bweb-MA",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_MA_051020261403.zip",
+      "tipo": "bweb",
+      "sha512": "28eda5cc72f2d7f29b32282e72461fd93baa7f4da430e1f624128aeb3d83326f25b26efda431c2669e9a23d9d9b76a8f62e27f7a616b54ae5f8e1630a1775134",
+      "bytes": 142453462,
+      "sha512_publicado_pelo_tse": true,
+      "etag": "\"87daad6-65d2dffbd1bf8\"",
+      "last_modified": "Tue, 06 Oct 2026 15:53:25 GMT",
+      "extrato": {
+        "arquivo": "bweb_1t_MA_051020261403-presidente.csv.gz",
+        "sha512": "c813fc7d206c874ee478c272f78dba0642ee710476f3be0a685273535daf1eac7ee4964009a53d29ef2c32b4263a31d451ecfd5b4980514082e5ed2bb3216e8b",
+        "bytes": 1878898
+      }
+    },
+    {
+      "id": "bweb-MG",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_MG_051020261403.zip",
+      "tipo": "bweb",
+      "sha512": "c0d4a82adb1fa1c89447c8a19448c588bad2597d4509c04a1b1671b835b9160e9c835091b1000180d1ad3a329dd36ce3bee1d57f4589a4e96d8c2601a99a80c6",
+      "bytes": 489306781,
+      "sha512_publicado_pelo_tse": true,
+      "etag": "\"1d2a3a9d-65d2dfd9b7e40\"",
+      "last_modified": "Tue, 06 Oct 2026 15:52:50 GMT",
+      "extrato": {
+        "arquivo": "bweb_1t_MG_051020261403-presidente.csv.gz",
+        "sha512": "eda110b1f0fa5562421c8a0d7a9c3856a95c18a51a24f9980f3a1929b4b0aba4b882282ccbf3f96bcfde856372aaa3c357d198fc461c4526aee7774f1e84e3fc",
+        "bytes": 6547215
+      }
+    },
+    {
+      "id": "bweb-MS",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_MS_051020261403.zip",
+      "tipo": "bweb",
+      "sha512": "e62c150f16fff1a4e6a08ba36e3f7d5b3820a01bb2cf5131df8426c462bb8edac5cb01584770271e356a9e56a8f2d59edf7516f795ce955928b53e3a853361a4",
+      "bytes": 51978602,
+      "sha512_publicado_pelo_tse": true,
+      "etag": "\"319216a-65d2dfd6e156a\"",
+      "last_modified": "Tue, 06 Oct 2026 15:52:47 GMT",
+      "extrato": {
+        "arquivo": "bweb_1t_MS_051020261403-presidente.csv.gz",
+        "sha512": "3d890d04b9442c1943382654175d83510c7295c249e5229e3a3e92fe23b33d39076caee9fabee880db75857c2fc2ae14a46c904ccef29f2ef3f90bc2e713293a",
+        "bytes": 705700
+      }
+    },
+    {
+      "id": "bweb-MT",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_MT_051020261403.zip",
+      "tipo": "bweb",
+      "sha512": "0b97fc665251f8a82d5b43938245bbc2b39b680c6053626abf5d94cc67b0105aed3d3c9bc97a6366507e7e409d81b8d5c1f5c15b2f95542e8d6e3e788818ab1d",
+      "bytes": 63492478,
+      "sha512_publicado_pelo_tse": true,
+      "etag": "\"3c8d17e-65d2dfcdf62ae\"",
+      "last_modified": "Tue, 06 Oct 2026 15:52:37 GMT",
+      "extrato": {
+        "arquivo": "bweb_1t_MT_051020261403-presidente.csv.gz",
+        "sha512": "e4493aa4b01f361623479e3135832ce0ea9c2ad0e2735f47d09b2019180a9229cef1d0a8e2a8f994b0b31ff188f6364b51b79f5a46a1665f73db7324e2457cf8",
+        "bytes": 894828
+      }
+    },
+    {
+      "id": "bweb-PA",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_PA_051020261403.zip",
+      "tipo": "bweb",
+      "sha512": "7ec84395ef9ce10fcfeedc9236b9fb93de80d7d278b56b074d0538009ed53e4fff695a627dd848028e91ef8cd1a5a36a1e6fe2318b0adac909c741739371d788",
+      "bytes": 172050487,
+      "sha512_publicado_pelo_tse": true,
+      "etag": "\"a414837-65d2dfcd94c1b\"",
+      "last_modified": "Tue, 06 Oct 2026 15:52:37 GMT",
+      "extrato": {
+        "arquivo": "bweb_1t_PA_051020261403-presidente.csv.gz",
+        "sha512": "46f0e571664272ae82741b8f103b010419cad3ffd0275a29cf08b5a0c8abf2730231776779ef0446c7ebdc9f54e3dd5a3a73e1ccdf388a5d6c6d2cb35a69d1dc",
+        "bytes": 2082661
+      }
+    },
+    {
+      "id": "bweb-PB",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_PB_051020261403.zip",
+      "tipo": "bweb",
+      "sha512": "22784224b1e752b10371a22cc5cdb381b78c9a3b694da02a71867db116adf39d6b08e52f9cd69888fa708c2be12a3a35d24acf78a3b2f601e2c98561ae496812",
+      "bytes": 77916707,
+      "sha512_publicado_pelo_tse": true,
+      "etag": "\"4a4ea23-65d2dfcef4cd7\"",
+      "last_modified": "Tue, 06 Oct 2026 15:52:38 GMT",
+      "extrato": {
+        "arquivo": "bweb_1t_PB_051020261403-presidente.csv.gz",
+        "sha512": "012ce746f090ef9dc8f90eb546be4a7fd73b72502318e4c4b4c8423db8590dd2c79f2b44f9e1e2f12f0987b62b86ca634708eec2b51693bd97ce334a6e8cce96",
+        "bytes": 1126296
+      }
+    },
+    {
+      "id": "bweb-PE",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_PE_051020261403.zip",
+      "tipo": "bweb",
+      "sha512": "8d01dd88ba42adf623d3ec23a934691b3cd9ae4e90a7093877592d425d5f79aafc20f1cc419e9de73265116f1c908555c7c8b42015b1f72dadb4a09378da7cfa",
+      "bytes": 204972135,
+      "sha512_publicado_pelo_tse": true,
+      "etag": "\"c37a067-65d2dfc501f6a\"",
+      "last_modified": "Tue, 06 Oct 2026 15:52:28 GMT",
+      "extrato": {
+        "arquivo": "bweb_1t_PE_051020261403-presidente.csv.gz",
+        "sha512": "26eda6a7f945fdbf18ffa2c85d3f2f4db4758a462037eb7692c24c1b111146190b950ebbe9ab5a162127e2c0d17f7d6273db0acb56dca35df6a0458e4af6c7e8",
+        "bytes": 2241699
+      }
+    },
+    {
+      "id": "bweb-PI",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_PI_051020261403.zip",
+      "tipo": "bweb",
+      "sha512": "c77cafd73117432124f789dc75fcb2401338a82dfae707ea4626639c980c318c25555b53fd5a2ad3604aec8bce76012de3ef7102c0cd9e1460b1d7f8f05f8c8a",
+      "bytes": 66216824,
+      "sha512_publicado_pelo_tse": true,
+      "etag": "\"3f26378-65d2dfc7d78a0\"",
+      "last_modified": "Tue, 06 Oct 2026 15:52:31 GMT",
+      "extrato": {
+        "arquivo": "bweb_1t_PI_051020261403-presidente.csv.gz",
+        "sha512": "715e5d3cde30e7139b43a6f75ef21e8f361ea54232bec188aa1c580067b10a765b64913266b2ceea233337badfdc429b1694130b55d9ef002f52103c768929e9",
+        "bytes": 1063316
+      }
+    },
+    {
+      "id": "bweb-PR",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_PR_051020261403.zip",
+      "tipo": "bweb",
+      "sha512": "762372bbafff59673da579e81a31536fe990b90e81dd92277af12e395dcb23784e7b6eccdb8826b214c9772edf997bd6747ff8ab87bd40b17049bafca1c5b10b",
+      "bytes": 270246858,
+      "sha512_publicado_pelo_tse": true,
+      "etag": "\"101ba3ca-65d2e140b628f\"",
+      "last_modified": "Tue, 06 Oct 2026 15:59:06 GMT",
+      "extrato": {
+        "arquivo": "bweb_1t_PR_051020261403-presidente.csv.gz",
+        "sha512": "347003e4df4fa70b1ce8c1551ca7417254e3ce2279f10c5b3fb824d3ab416615bb329a1e6558b3cb946078c7144867973db8df30f2e9f9867cb5b49017d3aed5",
+        "bytes": 3153866
+      }
+    },
+    {
+      "id": "bweb-RJ",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_RJ_051020261403.zip",
+      "tipo": "bweb",
+      "sha512": "15fec8c7104496cb39379030cf3fc732801e80405fe0efac7985164bdf72a5decdac3a34ae3fcd7d39e44a9be12674bc5961685a67a9d1c0c38c0c7e1d45719d",
+      "bytes": 536375038,
+      "sha512_publicado_pelo_tse": true,
+      "etag": "\"1ff86efe-65d2dfcb9c9d0\"",
+      "last_modified": "Tue, 06 Oct 2026 15:52:35 GMT",
+      "extrato": {
+        "arquivo": "bweb_1t_RJ_051020261403-presidente.csv.gz",
+        "sha512": "112fb0edf7bcb381dd88013ff0d0ed6b13de56d645e700e06983cf7d3a496bc281760bb71135fb5b96b8bfdc21cf29e1ac4fabf5e81614ab4f422800d8f76ba6",
+        "bytes": 4167337
+      }
+    },
+    {
+      "id": "bweb-RN",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_RN_051020261403.zip",
+      "tipo": "bweb",
+      "sha512": "8c306c4501a9c5f9bdaa17f416c07280a24563f68f65d64e51843bc0b5377bacd534417396200772c471e412f9e4981273432f104ee1e2f7f3681399fd95b820",
+      "bytes": 54412606,
+      "sha512_publicado_pelo_tse": true,
+      "etag": "\"33e453e-65d2dfc4113e8\"",
+      "last_modified": "Tue, 06 Oct 2026 15:52:27 GMT",
+      "extrato": {
+        "arquivo": "bweb_1t_RN_051020261403-presidente.csv.gz",
+        "sha512": "8edd635ca0fc8d302fc272158a65a205dbf87b9f5c3f29995280fa11e85d92c3a55f60a9d12056b1a85b53987a2953d62aa8bc278eb26232a1631b8dfa39f186",
+        "bytes": 852592
+      }
+    },
+    {
+      "id": "bweb-RO",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_RO_051020261403.zip",
+      "tipo": "bweb",
+      "sha512": "883b0c3cdf8047d9776b2409abecc0ed287a8a6a7f3657a860701a2b9999664a8a6c8012db96238ed1476899120dd2dc62167a3e8924e9d4b1db686c2302fcaf",
+      "bytes": 36216443,
+      "sha512_publicado_pelo_tse": true,
+      "etag": "\"2289e7b-65d2dfccfca8c\"",
+      "last_modified": "Tue, 06 Oct 2026 15:52:36 GMT",
+      "extrato": {
+        "arquivo": "bweb_1t_RO_051020261403-presidente.csv.gz",
+        "sha512": "afc99766f5fa9c1a3308a4292277bc279c8ba54cb39d492d8876e9eb1e1378b8eb58408ff8a92820325503013b88dc07b085ce4368987df76e9c063c426b6b9f",
+        "bytes": 439228
+      }
+    },
+    {
+      "id": "bweb-RR",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_RR_051020261403.zip",
+      "tipo": "bweb",
+      "sha512": "4cde1919c20ba0940a9b5fc83422e93248b28fb494510205ae3862b61340a9e8d5d297444af84618c84ec7bb7f1dbc7c487b51e22377c3cde3f71bc39a8dc5c6",
+      "bytes": 11931936,
+      "sha512_publicado_pelo_tse": true,
+      "etag": "\"b61120-65d2dfc62b529\"",
+      "last_modified": "Tue, 06 Oct 2026 15:52:29 GMT",
+      "extrato": {
+        "arquivo": "bweb_1t_RR_051020261403-presidente.csv.gz",
+        "sha512": "518a42037ce60f1396cd2164d41829d73c1517b687a91051acd1a764091631725dfce30a4f75a56de50097c00c807633e04f68c63d9ccf08bf1ec50e96f7e2d8",
+        "bytes": 118077
+      }
+    },
+    {
+      "id": "bweb-RS",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_RS_051020261403.zip",
+      "tipo": "bweb",
+      "sha512": "b6dd056af20ce8768b2a439b1929102a077f0931f966c5314f706b4c98eb6e39549f8b143aee3808c22490a9d9e3f7dc24af925ea421fa1ae2d896283ff45732",
+      "bytes": 270859776,
+      "sha512_publicado_pelo_tse": true,
+      "etag": "\"1024fe00-65d2dfc50b7c1\"",
+      "last_modified": "Tue, 06 Oct 2026 15:52:28 GMT",
+      "extrato": {
+        "arquivo": "bweb_1t_RS_051020261403-presidente.csv.gz",
+        "sha512": "c97704f792fa940cd137b46d12de97159fb6c6787ceee2df03d21e90dd375d754638b2f65d134f8a458ee19c6239d4b3dba3a321fc7c1f339bb355c4336c3a5f",
+        "bytes": 3303869
+      }
+    },
+    {
+      "id": "bweb-SC",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_SC_051020261403.zip",
+      "tipo": "bweb",
+      "sha512": "618c1cacf80bc2964d3bb5e6274ba3e2adeed853077083bc01004e5110e79615868cf3c39b490e283c181c716275d4473da35d11f407111f4170fc91a8a93db7",
+      "bytes": 153178332,
+      "sha512_publicado_pelo_tse": true,
+      "etag": "\"92150dc-65d2dfcaf5de2\"",
+      "last_modified": "Tue, 06 Oct 2026 15:52:34 GMT",
+      "extrato": {
+        "arquivo": "bweb_1t_SC_051020261403-presidente.csv.gz",
+        "sha512": "2bd75d71326a81f00957e6d1c4429491593368a823e9ebbad6ee70cecb21cca34c01e086b4ce61137b0b7faf7711f72ce77e0be63e080d27b49875015436bbe8",
+        "bytes": 2070198
+      }
+    },
+    {
+      "id": "bweb-SE",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_SE_051020261403.zip",
+      "tipo": "bweb",
+      "sha512": "dd1afedc6867ca7828becbe52178cda4e9104d2966fd3cad8c28d4f4ff7c86270dcc5c24cb3904b02a0f0f5a4f7308bb2b7d9f9d60775092f55de136204b9d40",
+      "bytes": 46931962,
+      "sha512_publicado_pelo_tse": true,
+      "etag": "\"2cc1ffa-65d2dfc7d3e08\"",
+      "last_modified": "Tue, 06 Oct 2026 15:52:31 GMT",
+      "extrato": {
+        "arquivo": "bweb_1t_SE_051020261403-presidente.csv.gz",
+        "sha512": "3cda2097aece975e5f195b74b1ef12fc3cf38eeec4f95a7c6a3786ed3960da3b16132a51425dfdb2c3bb3a2aad5961f66b2e07f298ea6bf2ca5633d8835f9e21",
+        "bytes": 603318
+      }
+    },
+    {
+      "id": "bweb-SP",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_SP_051020261403.zip",
+      "tipo": "bweb",
+      "sha512": "00c8b12de9077c8263c87ba91d1300e230719bd1ad27e7f37131478d8e3b4bc9c66b727b3e30c73c89799e136c329db45b85e6d037874ea8fa166d74f26ca403",
+      "bytes": 1395007777,
+      "sha512_publicado_pelo_tse": true,
+      "etag": "\"53262121-65d2e869534f7\"",
+      "last_modified": "Tue, 06 Oct 2026 16:31:08 GMT",
+      "extrato": {
+        "arquivo": "bweb_1t_SP_051020261403-presidente.csv.gz",
+        "sha512": "605aca6afc2ddc322153634ef3d5c81705d584abcbb06c9cc2f0accd9316644ce5a731222b85d9709a1ac2342f29aca33aef421cb3ca0fe01f659274873d8765",
+        "bytes": 12210832
+      }
+    },
+    {
+      "id": "bweb-TO",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_TO_051020261403.zip",
+      "tipo": "bweb",
+      "sha512": "b936b450693c00741226bd1b6c09843c6671e41abafa393ef31606a7038272011b9030ec8d62a8f61d7ff31f532b7979321cac456bef3b44925e0b00026bc614",
+      "bytes": 29667347,
+      "sha512_publicado_pelo_tse": true,
+      "etag": "\"1c4b013-65d2dfca41b1c\"",
+      "last_modified": "Tue, 06 Oct 2026 15:52:33 GMT",
+      "extrato": {
+        "arquivo": "bweb_1t_TO_051020261403-presidente.csv.gz",
+        "sha512": "8ef8d336e3a13650d3138dc91a26eb01de5f483a14aa922d8bf57646b068817d8d2522e90814b0200336c5448b6144f3895021092a6c8d30c0c7909f78967766",
+        "bytes": 419534
+      }
+    },
+    {
+      "id": "bweb-ZZ",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_ZZ_051020261403.zip",
+      "tipo": "bweb",
+      "sha512": "001ae12d79a7d5f9471c0a8bb3e09b5cb6633be598683db74b0ab08c0002f2c764cb9fde9c0470c6414985ce47cd01b00c343438d9c914f3f792a1975b400a55",
+      "bytes": 1039125,
+      "sha512_publicado_pelo_tse": true,
+      "etag": "\"fdb15-65d2d7e9f1a11\"",
+      "last_modified": "Tue, 06 Oct 2026 15:17:19 GMT",
+      "extrato": {
+        "arquivo": "bweb_1t_ZZ_051020261403-presidente.csv.gz",
+        "sha512": "b75f136e7f9c462b9ff5e7ece52a72f07c5003b0588fc8de4a1f8a3fb65f89d857738e36f8d03290da1b5fb385b0b1455d6600d850ddfcbf41b99a75d8b4940f",
+        "bytes": 174878
+      }
+    },
+    {
+      "id": "detalhe-2026",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/detalhe_votacao_munzona/detalhe_votacao_munzona_2026.zip",
+      "tipo": "detalhe",
+      "sha512": "aad0039c105423b37ddfcb4a0db1ab3b4f67d816aa407249fa8cbb54ae5ec3e2ae0a5fdc552a880e0b93f18e2c21949f109e176faaaa85b623481cf05b4be45a",
+      "bytes": 2501837,
+      "sha512_publicado_pelo_tse": false,
+      "etag": "\"262ccd-65dbe6e862fa0\"",
+      "last_modified": "Tue, 13 Oct 2026 20:12:19 GMT"
+    },
+    {
+      "id": "munzona-2026",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_munzona/votacao_candidato_munzona_2026.zip",
+      "tipo": "munzona",
+      "sha512": "8217fad14700e6856d43074d32f1f7f8fc0a454e648035897a620de722114effd0d57eb51728cb8aa322c7f2652bb4756bec72d3ae58aa24564434ac18b7d0e1",
+      "bytes": 447710979,
+      "sha512_publicado_pelo_tse": false,
+      "etag": "\"1aaf8703-65dc115409ada\"",
+      "last_modified": "Tue, 13 Oct 2026 23:22:06 GMT"
+    },
+    {
+      "id": "ntwkst-br",
+      "url": "https://raw.githubusercontent.com/ntwkst/apuracao-monitor/c3a4a364f95614955cf03f81321d0c462338e5f3/data/linha-do-tempo-t1-2026.csv",
+      "tipo": "terceiro",
+      "sha512": "59522b29e145793644af77425a359447be761bb9d0a6ef967a0123d5ba7e6d2ab68fc500365e86076f2186deecfa1ce0a6145c640f439b3b082031251cea2b9b",
+      "bytes": 60347,
+      "sha512_publicado_pelo_tse": false,
+      "etag": "\"f24c8f9b85cac338877afdaba5b4e17ef290a78ba4405786c346d4626dd69e57\"",
+      "last_modified": null
+    }
+  ]
+}

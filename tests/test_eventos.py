@@ -4,15 +4,15 @@ import csv
 import io
 from collections import Counter
 
-from tests.test_conciliacao_2022_2t import BASE, _locais, pytestmark  # noqa: F401
+from tests.util import base, locais
 
 
 def _ler(texto):
     return list(csv.DictReader(io.StringIO(texto)))
 
 
-def test_eventos_reproduzem_a_serie_minuto_de_cada_uf(saida):
-    for sigla, caminho in _locais(saida):
+def test_eventos_reproduzem_a_serie_minuto_de_cada_uf(saida, eleicao):
+    for sigla, caminho in locais(saida, eleicao):
         if sigla == "BR":
             continue
         eventos = _ler(saida[f"{caminho}/eventos.csv"])
@@ -32,9 +32,9 @@ def test_eventos_reproduzem_a_serie_minuto_de_cada_uf(saida):
         assert i == len(eventos), sigla
 
 
-def test_eventos_ordenados_e_sem_secao_repetida(saida):
+def test_eventos_ordenados_e_sem_secao_repetida(saida, eleicao):
     vistas = set()
-    for sigla, caminho in _locais(saida):
+    for sigla, caminho in locais(saida, eleicao):
         if sigla == "BR":
             continue
         eventos = _ler(saida[f"{caminho}/eventos.csv"])
@@ -44,5 +44,5 @@ def test_eventos_ordenados_e_sem_secao_repetida(saida):
             chave = (e["uf"], e["cd_municipio_tse"], e["zona"], e["secao"])
             assert chave not in vistas, chave
             vistas.add(chave)
-    br = saida[f"{BASE}/resumo.json"]["resultado"]
+    br = saida[f"{base(eleicao)}/resumo.json"]["resultado"]
     assert len(vistas) == br["secoes"]

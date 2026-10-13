@@ -10,7 +10,6 @@ from openapi_spec_validator import OpenAPIV31SpecValidator
 
 from pipeline import openapi, schemas
 from pipeline.build import gerar_indice, gerar_openapi, gerar_schemas
-from tests.test_conciliacao_2022_2t import pytestmark  # noqa: F401
 
 SPEC = openapi.gerar()
 
@@ -47,10 +46,10 @@ def _expandir(template: str, so_eleicoes: set[str]):
         yield caminho
 
 
-def test_todo_caminho_documentado_existe(saida):
+def test_todo_caminho_documentado_existe(saida, eleicao):
     publicados = _publicados(saida)
     for template in SPEC["paths"]:
-        for caminho in _expandir(template, {"2022-2t"}):
+        for caminho in _expandir(template, {eleicao.id}):
             assert caminho in publicados, f"{template} → {caminho} não é gerado"
 
 

@@ -28,14 +28,17 @@ jobs:
           key: fontes-${{ hashFiles('manifestos/*.json') }}
 
       - name: Fontes (cópia arquivada, conferida com o manifesto)
-        run: uv run python -m pipeline.fetch 2022-2t --arquivo
+        run: |
+          for e in 2022-2t 2026-1t; do
+            uv run python -m pipeline.fetch "$e" --arquivo
+          done
 
       - name: Conciliação
         run: uv run pytest -q
 
       - name: Reprodutibilidade (dist/ commitado = saída do build)
         run: |
-          uv run python -m pipeline.build 2022-2t
+          uv run python -m pipeline.build
           if [ -n "$(git status --porcelain)" ]; then
             git status --short | head -20
             echo "::error::dist/ commitado difere da saída do build"

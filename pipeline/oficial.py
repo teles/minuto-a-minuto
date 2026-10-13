@@ -22,6 +22,7 @@ class TotaisOficiais:
     secoes_nao_instaladas: int = 0
     aptos: int = 0
     aptos_nao_instaladas: int = 0  # eleitores das seções não instaladas (não há boletim)
+    nulos_tecnicos: int = 0  # já incluídos em votos["nulo"]
     comparecimento: int = 0
     votos: Counter = field(default_factory=Counter)  # mesmo formato de Secao.votos
 
@@ -49,6 +50,7 @@ def ler_oficiais(
         t.comparecimento += int(r["QT_COMPARECIMENTO"])
         t.votos["branco"] += int(r["QT_VOTOS_BRANCOS"])
         t.votos["nulo"] += int(r["QT_TOTAL_VOTOS_NULOS"])
+        t.nulos_tecnicos += int(r["QT_VOTOS_NULOS_TECNICOS"])
 
     for r in _linhas(munzona_zip, f"votacao_candidato_munzona_{ano}_BR.csv"):
         if r["NR_TURNO"] != str(turno) or r["CD_CARGO"] != cd_cargo:
@@ -62,6 +64,7 @@ def ler_oficiais(
         br.secoes_nao_instaladas += t.secoes_nao_instaladas
         br.aptos += t.aptos
         br.aptos_nao_instaladas += t.aptos_nao_instaladas
+        br.nulos_tecnicos += t.nulos_tecnicos
         br.comparecimento += t.comparecimento
         br.votos.update(t.votos)
     return {**por_uf, "BR": br}
