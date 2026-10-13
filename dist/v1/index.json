@@ -7,6 +7,13 @@
         "presidente"
       ],
       "href": "/v1/eleicoes/2022-2t/index.json"
+    },
+    {
+      "id": "2026-1t",
+      "cargos": [
+        "presidente"
+      ],
+      "href": "/v1/eleicoes/2026-1t/index.json"
     }
   ],
   "_links": {

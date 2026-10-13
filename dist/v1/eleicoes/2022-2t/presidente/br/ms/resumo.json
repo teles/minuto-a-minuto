@@ -58,6 +58,12 @@
         "href": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/buweb/bweb_2t_MS_311020221535.zip"
       }
     ],
+    "compare": [
+      {
+        "href": "/v1/eleicoes/2026-1t/presidente/br/ms/resumo.json",
+        "name": "2026-1t"
+      }
+    ],
     "parent": {
       "href": "/v1/eleicoes/2022-2t/presidente/br/resumo.json"
     },
@@ -74,7 +80,7 @@
     ],
     "gerado_por": {
       "repositorio": "minuto-a-minuto",
-      "commit": "71779617697bca79510619c12791f4712a318901"
+      "commit": "6455f5ea4d03ca54f9dd9f96dae09707ab450488"
     },
     "licenca": {
       "id": "CC-BY-4.0",

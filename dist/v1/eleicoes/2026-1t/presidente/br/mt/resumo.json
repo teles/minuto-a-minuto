@@ -1,0 +1,151 @@
+{
+  "$schema": "https://minutoaminuto.pages.dev/v1/schema/resumo.schema.json",
+  "eleicao": {
+    "id": "2026-1t",
+    "ano": 2026,
+    "turno": 1,
+    "data": "2026-10-04",
+    "cargo": "presidente",
+    "cd_eleicao_tse": "6257",
+    "inicio_divulgacao": "2026-10-04T17:00:00-03:00"
+  },
+  "local": {
+    "nivel": "uf",
+    "sigla": "MT",
+    "nome": "Mato Grosso"
+  },
+  "candidatos": [
+    {
+      "numero": "13",
+      "nome_urna": "LULA",
+      "partido": "PT"
+    },
+    {
+      "numero": "14",
+      "nome_urna": "RENAN SANTOS",
+      "partido": "MISSÃO"
+    },
+    {
+      "numero": "16",
+      "nome_urna": "HERTZ DIAS",
+      "partido": "PSTU"
+    },
+    {
+      "numero": "21",
+      "nome_urna": "EDMILSON COSTA",
+      "partido": "PCB"
+    },
+    {
+      "numero": "22",
+      "nome_urna": "FLAVIO BOLSONARO",
+      "partido": "PL"
+    },
+    {
+      "numero": "27",
+      "nome_urna": "CLARIANA BARAO",
+      "partido": "DC"
+    },
+    {
+      "numero": "29",
+      "nome_urna": "RUI COSTA PIMENTA",
+      "partido": "PCO"
+    },
+    {
+      "numero": "30",
+      "nome_urna": "ZEMA",
+      "partido": "NOVO"
+    },
+    {
+      "numero": "35",
+      "nome_urna": "VETERINÁRIO WILSON GRASSI",
+      "partido": "DEMOCRATA"
+    },
+    {
+      "numero": "55",
+      "nome_urna": "RONALDO CAIADO",
+      "partido": "PSD"
+    },
+    {
+      "numero": "70",
+      "nome_urna": "ESCRITOR AUGUSTO CURY",
+      "partido": "AVANTE"
+    },
+    {
+      "numero": "80",
+      "nome_urna": "SAMARA",
+      "partido": "UP"
+    }
+  ],
+  "resultado": {
+    "t": "2026-10-04T21:22:00-03:00",
+    "seg_desde_inicio": 15720,
+    "secoes": 8287,
+    "pct_secoes": 100.0,
+    "aptos": 2637801,
+    "comparecimento": 2052133,
+    "votos": {
+      "13": 581681,
+      "14": 33170,
+      "16": 340,
+      "21": 239,
+      "22": 1298581,
+      "27": 1869,
+      "29": 130,
+      "30": 2424,
+      "35": 172,
+      "55": 33079,
+      "70": 40019,
+      "80": 1584,
+      "branco": 20756,
+      "nulo": 38089
+    }
+  },
+  "_links": {
+    "self": {
+      "href": "/v1/eleicoes/2026-1t/presidente/br/mt/resumo.json"
+    },
+    "serie-minuto": {
+      "href": "/v1/eleicoes/2026-1t/presidente/br/mt/serie-minuto.json"
+    },
+    "serie-pct": {
+      "href": "/v1/eleicoes/2026-1t/presidente/br/mt/serie-pct.json"
+    },
+    "eleicao": {
+      "href": "/v1/eleicoes/2026-1t/index.json"
+    },
+    "fonte-tse": [
+      {
+        "href": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_MT_051020261403.zip"
+      }
+    ],
+    "compare": [
+      {
+        "href": "/v1/eleicoes/2022-2t/presidente/br/mt/resumo.json",
+        "name": "2022-2t"
+      }
+    ],
+    "parent": {
+      "href": "/v1/eleicoes/2026-1t/presidente/br/resumo.json"
+    },
+    "eventos": {
+      "href": "/v1/eleicoes/2026-1t/presidente/br/mt/eventos.csv"
+    }
+  },
+  "_proveniencia": {
+    "fontes": [
+      {
+        "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2026/buweb/bweb_1t_MT_051020261403.zip",
+        "sha512": "0b97fc665251f8a82d5b43938245bbc2b39b680c6053626abf5d94cc67b0105aed3d3c9bc97a6366507e7e409d81b8d5c1f5c15b2f95542e8d6e3e788818ab1d"
+      }
+    ],
+    "gerado_por": {
+      "repositorio": "minuto-a-minuto",
+      "commit": "6455f5ea4d03ca54f9dd9f96dae09707ab450488"
+    },
+    "licenca": {
+      "id": "CC-BY-4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/deed.pt-br",
+      "atribuicao": "Dados: minuto-a-minuto (github.com/teles/minuto-a-minuto), a partir de dados públicos do TSE."
+    }
+  }
+}
