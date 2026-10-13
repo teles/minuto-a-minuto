@@ -4,7 +4,13 @@ Fonte única dos schemas: o build os publica em /v1/schema/ e os testes validam
 toda a saída contra eles.
 """
 
-URL_BASE = "/v1/schema"
+URL_PUBLICA = "https://minutoaminuto.pages.dev"
+URL_BASE = "/v1/schema"  # caminho publicado dos schemas
+
+
+def url_schema(nome: str) -> str:
+    """URL absoluta do schema; é o valor de "$schema" em cada arquivo da API."""
+    return f"{URL_PUBLICA}{URL_BASE}/{nome}.schema.json"
 
 _INT = {"type": "integer", "minimum": 0}
 _HREF = {
@@ -140,13 +146,13 @@ DEFS = {
 
 
 def _schema(nome: str, propriedades: dict, obrigatorias: list[str]) -> dict:
-    props = {"schema": {"const": f"minuto-a-minuto/v1/{nome}"}, **propriedades}
+    props = {"$schema": {"const": url_schema(nome)}, **propriedades}
     return {
         "$schema": "https://json-schema.org/draft/2020-12/schema",
-        "$id": f"{URL_BASE}/{nome}.schema.json",
+        "$id": url_schema(nome),
         "title": f"minuto-a-minuto v1: {nome}",
         "type": "object",
-        "required": ["schema", *obrigatorias],
+        "required": ["$schema", *obrigatorias],
         "properties": props,
         "additionalProperties": False,
         "$defs": DEFS,

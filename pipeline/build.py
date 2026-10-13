@@ -192,21 +192,21 @@ def gerar(eleicao: Eleicao) -> dict[str, dict | str]:
         }
 
         saida[f"{caminho}/resumo.json"] = {
-            "schema": "minuto-a-minuto/v1/resumo",
+            "$schema": schemas.url_schema("resumo"),
             **comum,
             "resultado": _ponto(final.placar, final.t, inicio, total, candidatos),
             "_links": links,
             "_proveniencia": proveniencia,
         }
         saida[f"{caminho}/serie-minuto.json"] = {
-            "schema": "minuto-a-minuto/v1/serie-minuto",
+            "$schema": schemas.url_schema("serie-minuto"),
             **comum,
             "pontos": [_ponto(p.placar, p.t, inicio, total, candidatos) for p in minuto],
             "_links": {**links, "self": {"href": f"{caminho}/serie-minuto.json"}},
             "_proveniencia": proveniencia,
         }
         saida[f"{caminho}/serie-pct.json"] = {
-            "schema": "minuto-a-minuto/v1/serie-pct",
+            "$schema": schemas.url_schema("serie-pct"),
             **comum,
             "passo": PASSO_PCT,
             "pontos": [
@@ -217,7 +217,7 @@ def gerar(eleicao: Eleicao) -> dict[str, dict | str]:
         }
 
     saida[f"{PREFIXO}/{eleicao.id}/index.json"] = {
-        "schema": "minuto-a-minuto/v1/eleicao",
+        "$schema": schemas.url_schema("eleicao"),
         "eleicao": eleicao_json,
         "candidatos": cands_json,
         "_links": {
@@ -281,7 +281,7 @@ def gerar_indice() -> dict[str, dict]:
     """Ponto de entrada da API: lista as eleições configuradas e os schemas."""
     return {
         "/v1/index.json": {
-            "schema": "minuto-a-minuto/v1/indice",
+            "$schema": schemas.url_schema("indice"),
             "eleicoes": [
                 {"id": e.id, "cargos": [e.cargo], "href": f"{PREFIXO}/{e.id}/index.json"}
                 for e in ELEICOES.values()
