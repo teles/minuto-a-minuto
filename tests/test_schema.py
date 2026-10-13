@@ -4,7 +4,7 @@ import jsonschema
 import pytest
 
 from pipeline import schemas
-from pipeline.build import formatar, gerar_schemas
+from pipeline.build import formatar, gerar_indice, gerar_schemas
 from tests.test_conciliacao_2022_2t import pytestmark  # noqa: F401
 
 VALIDADORES = {
@@ -26,6 +26,25 @@ def test_toda_saida_valida_contra_o_schema(saida):
             continue
         erros = list(VALIDADORES[obj["schema"]].iter_errors(obj))
         assert not erros, f"{caminho}: {erros[0].message} em {list(erros[0].absolute_path)}"
+
+
+def test_indice_valida_e_aponta_para_arquivos_gerados(saida):
+    indice = gerar_indice()["/v1/index.json"]
+    VALIDADORES[indice["schema"]].validate(indice)
+    assert "/v1/eleicoes/2022-2t/index.json" in {e["href"] for e in indice["eleicoes"]}
+    assert "/v1/eleicoes/2022-2t/index.json" in saida
+    assert {s["href"] for s in indice["_links"]["schemas"]} == set(gerar_schemas())
+
+
+def test_links_internos_apontam_para_arquivos_gerados(saida):
+    publicados = set(saida) | set(gerar_schemas()) | set(gerar_indice())
+    for caminho, obj in saida.items():
+        if isinstance(obj, str):
+            continue
+        for nome, alvo in obj["_links"].items():
+            for link in alvo if isinstance(alvo, list) else [alvo]:
+                if link["href"].startswith("/"):
+                    assert link["href"] in publicados, f"{caminho}: link {nome} quebrado"
 
 
 def test_schema_rejeita_campo_desconhecido(saida):

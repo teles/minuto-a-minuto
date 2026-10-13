@@ -1,0 +1,38 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  conciliacao:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # o build registra o último commit que alterou o pipeline
+
+      - uses: astral-sh/setup-uv@v6
+
+      - run: uv sync --locked
+
+      - uses: actions/cache@v4
+        with:
+          path: data/raw
+          key: fontes-${{ hashFiles('manifestos/*.json') }}
+
+      - name: Fontes (cópia arquivada, conferida com o manifesto)
+        run: uv run python -m pipeline.fetch 2022-2t --arquivo
+
+      - name: Conciliação
+        run: uv run pytest -q
+
+      - name: Reprodutibilidade (dist/ commitado = saída do build)
+        run: |
+          uv run python -m pipeline.build 2022-2t
+          if [ -n "$(git status --porcelain)" ]; then
+            git status --short | head -20
+            echo "::error::dist/ commitado difere da saída do build"
+            exit 1
+          fi

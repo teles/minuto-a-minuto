@@ -25,6 +25,11 @@ CODIGO = ["pipeline", "pyproject.toml", "uv.lock"]
 PREFIXO = "/v1/eleicoes"
 FUSO = "-03:00"  # horário de Brasília (sem horário de verão desde 2019)
 PASSO_PCT = 0.5
+LICENCA = {
+    "id": "CC-BY-4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/deed.pt-br",
+    "atribuicao": "Dados: minuto-a-minuto (github.com/teles/minuto-a-minuto), a partir de dados públicos do TSE.",
+}
 
 NOMES_UF = {
     "AC": "Acre", "AL": "Alagoas", "AM": "Amazonas", "AP": "Amapá", "BA": "Bahia",
@@ -179,6 +184,7 @@ def gerar(eleicao: Eleicao) -> dict[str, dict | str]:
         proveniencia = {
             "fontes": _fontes(manifesto, ids_fonte),
             "gerado_por": {"repositorio": "minuto-a-minuto", "commit": commit},
+            "licenca": LICENCA,
         }
 
         saida[f"{caminho}/resumo.json"] = {
@@ -247,6 +253,28 @@ def gerar_schemas() -> dict[str, dict]:
     return {f"{schemas.URL_BASE}/{nome}.schema.json": s for nome, s in schemas.SCHEMAS.items()}
 
 
+def gerar_indice() -> dict[str, dict]:
+    """Ponto de entrada da API: lista as eleições configuradas e os schemas."""
+    return {
+        "/v1/index.json": {
+            "schema": "minuto-a-minuto/v1/indice",
+            "eleicoes": [
+                {"id": e.id, "cargos": [e.cargo], "href": f"{PREFIXO}/{e.id}/index.json"}
+                for e in ELEICOES.values()
+            ],
+            "_links": {
+                "self": {"href": "/v1/index.json"},
+                "schemas": [
+                    {"href": f"{schemas.URL_BASE}/{nome}.schema.json", "name": nome}
+                    for nome in schemas.SCHEMAS
+                ],
+                "licenca": {"href": LICENCA["url"]},
+                "codigo": {"href": "https://github.com/teles/minuto-a-minuto"},
+            },
+        }
+    }
+
+
 def main(eleicao_id: str) -> None:
     saida = gerar(ELEICOES[eleicao_id])
     destino = DIST / PREFIXO.lstrip("/") / eleicao_id
@@ -254,6 +282,7 @@ def main(eleicao_id: str) -> None:
         shutil.rmtree(destino)
     escrever(saida)
     escrever(gerar_schemas())
+    escrever(gerar_indice())
     print(f"{len(saida)} arquivos gerados em {destino.relative_to(RAIZ)}")
 
 

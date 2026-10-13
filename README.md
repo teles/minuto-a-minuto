@@ -15,6 +15,7 @@ O TSE divulga o placar ao vivo, mas cada atualização substitui a anterior. Est
 ## Estrutura
 
 ```
+/v1/index.json                                       ponto de entrada: eleições e schemas
 /v1/eleicoes/{eleicao}/index.json
 /v1/eleicoes/{eleicao}/{cargo}/br/resumo.json        resultado final
 /v1/eleicoes/{eleicao}/{cargo}/br/serie-minuto.json  placar acumulado a cada minuto
@@ -40,10 +41,21 @@ Os dados são gerados por código, nunca editados à mão, e só são aceitos se
 
 Regras e limites do método: [`docs/metodo.md`](docs/metodo.md).
 
+## Fontes e verificação contínua
+
+- Uma cópia exata das fontes usadas fica nas releases `fontes-<eleicao>` deste repositório. O build continua reproduzível mesmo que o TSE altere ou remova os arquivos originais.
+- Em cada push, a CI baixa essa cópia, confere os SHA-512 com o manifesto, roda a conciliação e confirma que o `dist/` commitado é exatamente a saída do build.
+- Diariamente, um workflow verifica se as fontes mudaram no TSE (hash publicado, ETag, data de modificação e boletins novos no portal) e abre uma issue se algo mudou.
+
 ## Como gerar
 
 ```sh
-uv run python -m pipeline.fetch 2022-2t   # baixa as fontes e confere os hashes
-uv run python -m pipeline.build 2022-2t   # gera dist/
-uv run pytest                             # conciliação
+uv run python -m pipeline.fetch 2022-2t             # baixa do TSE e confere os hashes
+uv run python -m pipeline.fetch 2022-2t --arquivo   # ou: baixa a cópia arquivada
+uv run python -m pipeline.build 2022-2t             # gera dist/
+uv run pytest                                       # conciliação
 ```
+
+## Licença
+
+Código sob [MIT](LICENSE). Dados sob [CC BY 4.0](LICENSE-DADOS.md), com atribuição ao minuto-a-minuto e ao TSE.

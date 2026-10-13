@@ -96,8 +96,18 @@ DEFS = {
     },
     "proveniencia": {
         "type": "object",
-        "required": ["fontes", "gerado_por"],
+        "required": ["fontes", "gerado_por", "licenca"],
         "properties": {
+            "licenca": {
+                "type": "object",
+                "required": ["id", "url", "atribuicao"],
+                "properties": {
+                    "id": {"const": "CC-BY-4.0"},
+                    "url": {"type": "string"},
+                    "atribuicao": {"type": "string"},
+                },
+                "additionalProperties": False,
+            },
             "fontes": {
                 "type": "array",
                 "minItems": 1,
@@ -179,6 +189,26 @@ SCHEMAS = {
             },
         },
         [*_OBRIG_COMUM, "passo", "pontos"],
+    ),
+    "indice": _schema(
+        "indice",
+        {
+            "eleicoes": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "required": ["id", "cargos", "href"],
+                    "properties": {
+                        "id": {"type": "string"},
+                        "cargos": {"type": "array", "items": {"type": "string"}},
+                        "href": {"type": "string"},
+                    },
+                    "additionalProperties": False,
+                },
+            },
+            "_links": {"$ref": "#/$defs/links"},
+        },
+        ["eleicoes", "_links"],
     ),
     "eleicao": _schema(
         "eleicao",

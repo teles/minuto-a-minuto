@@ -1,0 +1,45 @@
+name: fontes-tse
+
+on:
+  schedule:
+    - cron: "17 9 * * *" # diariamente, 06:17 em Brasília
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  checar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+
+      - run: uv sync --locked
+
+      - name: Verificar fontes no TSE
+        id: checar
+        run: |
+          set +e
+          uv run python -m pipeline.checar_fontes > relatorio.md
+          echo "codigo=$?" >> "$GITHUB_OUTPUT"
+          cat relatorio.md
+
+      - name: Abrir ou atualizar issue
+        if: steps.checar.outputs.codigo == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create fonte-tse --color D93F0B --description "Fonte do TSE mudou" --force
+          n=$(gh issue list --label fonte-tse --state open --json number --jq '.[0].number')
+          if [ -n "$n" ]; then
+            gh issue comment "$n" --body-file relatorio.md
+          else
+            gh issue create --title "Fonte do TSE mudou" --label fonte-tse --body-file relatorio.md
+          fi
+
+      - name: Falha na verificação
+        if: steps.checar.outputs.codigo == '2'
+        run: exit 1
