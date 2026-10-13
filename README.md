@@ -45,6 +45,7 @@ Regras e limites do método: [`docs/metodo.md`](docs/metodo.md).
 
 - Uma cópia exata das fontes usadas fica nas releases `fontes-<eleicao>` deste repositório. O build continua reproduzível mesmo que o TSE altere ou remova os arquivos originais.
 - Em cada push, a CI baixa essa cópia, confere os SHA-512 com o manifesto, roda a conciliação e confirma que o `dist/` commitado é exatamente a saída do build.
+- A API publicada é a branch `publicado`. A CI só avança essa branch até um commit do `main` depois que a conciliação e a reprodutibilidade passam nele; a Cloudflare publica a partir dela.
 - Diariamente, um workflow verifica se as fontes mudaram no TSE (hash publicado, ETag, data de modificação e boletins novos no portal) e abre uma issue se algo mudou.
 
 ## Como gerar
