@@ -326,6 +326,9 @@
     ],
     "parent": {
       "href": "/v1/eleicoes/2022-2t/presidente/br/resumo.json"
+    },
+    "eventos": {
+      "href": "/v1/eleicoes/2022-2t/presidente/br/go/eventos.csv"
     }
   },
   "_proveniencia": {
@@ -337,7 +340,7 @@
     ],
     "gerado_por": {
       "repositorio": "minuto-a-minuto",
-      "commit": "9a5f565e5380a4d39a70c74dff0c4940261b9bb3"
+      "commit": "4d46dcdd97ff872f2d0c7056090291402fab5b7a"
     }
   }
 }
