@@ -256,9 +256,30 @@
       "type": "object",
       "required": [
         "fontes",
-        "gerado_por"
+        "gerado_por",
+        "licenca"
       ],
       "properties": {
+        "licenca": {
+          "type": "object",
+          "required": [
+            "id",
+            "url",
+            "atribuicao"
+          ],
+          "properties": {
+            "id": {
+              "const": "CC-BY-4.0"
+            },
+            "url": {
+              "type": "string"
+            },
+            "atribuicao": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
         "fontes": {
           "type": "array",
           "minItems": 1,

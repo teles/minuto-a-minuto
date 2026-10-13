@@ -302,7 +302,12 @@
     ],
     "gerado_por": {
       "repositorio": "minuto-a-minuto",
-      "commit": "4d46dcdd97ff872f2d0c7056090291402fab5b7a"
+      "commit": "99f1a864ce559e7229a90b1bb0be9638671f3e6c"
+    },
+    "licenca": {
+      "id": "CC-BY-4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/deed.pt-br",
+      "atribuicao": "Dados: minuto-a-minuto (github.com/teles/minuto-a-minuto), a partir de dados públicos do TSE."
     }
   }
 }

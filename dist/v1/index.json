@@ -1,0 +1,45 @@
+{
+  "schema": "minuto-a-minuto/v1/indice",
+  "eleicoes": [
+    {
+      "id": "2022-2t",
+      "cargos": [
+        "presidente"
+      ],
+      "href": "/v1/eleicoes/2022-2t/index.json"
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "/v1/index.json"
+    },
+    "schemas": [
+      {
+        "href": "/v1/schema/resumo.schema.json",
+        "name": "resumo"
+      },
+      {
+        "href": "/v1/schema/serie-minuto.schema.json",
+        "name": "serie-minuto"
+      },
+      {
+        "href": "/v1/schema/serie-pct.schema.json",
+        "name": "serie-pct"
+      },
+      {
+        "href": "/v1/schema/indice.schema.json",
+        "name": "indice"
+      },
+      {
+        "href": "/v1/schema/eleicao.schema.json",
+        "name": "eleicao"
+      }
+    ],
+    "licenca": {
+      "href": "https://creativecommons.org/licenses/by/4.0/deed.pt-br"
+    },
+    "codigo": {
+      "href": "https://github.com/teles/minuto-a-minuto"
+    }
+  }
+}
