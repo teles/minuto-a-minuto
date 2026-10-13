@@ -1,0 +1,7 @@
+/*
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=300
+  X-Content-Type-Options: nosniff
+
+/v1/eleicoes/*
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
