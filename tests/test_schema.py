@@ -22,6 +22,8 @@ def test_schemas_sao_validos():
 
 def test_toda_saida_valida_contra_o_schema(saida):
     for caminho, obj in saida.items():
+        if isinstance(obj, str):  # CSV de eventos
+            continue
         erros = list(VALIDADORES[obj["schema"]].iter_errors(obj))
         assert not erros, f"{caminho}: {erros[0].message} em {list(erros[0].absolute_path)}"
 
@@ -36,5 +38,6 @@ def test_schema_rejeita_campo_desconhecido(saida):
 def test_formatacao_preserva_o_conteudo(saida):
     import json
 
-    for obj in list(saida.values()) + list(gerar_schemas().values()):
+    jsons = [o for o in saida.values() if isinstance(o, dict)]
+    for obj in jsons + list(gerar_schemas().values()):
         assert json.loads(formatar(obj)) == obj

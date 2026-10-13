@@ -10,7 +10,8 @@ O TSE publica o placar da apuração ao vivo, mas não guarda o histórico: cada
 4. **Ordem.** Seções recebidas no mesmo segundo são ordenadas por (UF, município, zona, seção).
 5. **Seções.** O denominador do `pct_secoes` são as seções **instaladas** (as que têm boletim). O TSE usa as seções principais, incluindo as não instaladas, que não têm boletim nem horário. Em 2022, 2º turno, foram 47 de 472.075 (diferença máxima de 0,01 p.p.). As seções agregadas vêm dentro do boletim da seção principal.
 6. **Série por minuto.** O ponto em T inclui todas as seções que entraram até T, de 17:00 até o minuto do último boletim.
-7. **Série por % apurado.** O ponto p (de 0 a 100, a cada 0,5) é o placar no instante em que o % de seções atingiu p pela primeira vez.
+7. **Eventos.** `eventos.csv` (por UF) traz uma linha por seção com `recebido` (o `DT_BU_RECEBIDO` do TSE) e `t` (quando entrou no placar, regra 3). As séries são agregações desses eventos.
+8. **Série por % apurado.** O ponto p (de 0 a 100, a cada 0,5) é o placar no instante em que o % de seções atingiu p pela primeira vez.
 
 ## Diferença em relação ao placar exibido pelo TSE
 

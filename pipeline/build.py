@@ -6,6 +6,8 @@ Saída em dist/v1/. Não grava carimbo de data/hora: o mesmo commit com as mesma
 fontes gera exatamente os mesmos bytes.
 """
 
+import csv
+import io
 import json
 import shutil
 import subprocess
@@ -64,6 +66,28 @@ def _git(*args: str) -> str:
     ).stdout.strip()
 
 
+def _eventos_csv(ordenadas: list[bweb.Secao], inicio: datetime, candidatos) -> str:
+    """Uma linha por seção, na ordem em que entraram no placar.
+
+    `recebido` é o DT_BU_RECEBIDO do TSE; `t` é quando a seção entrou no placar
+    (o mesmo instante, ou o início da divulgação se o boletim chegou antes).
+    """
+    votaveis = sorted(candidatos, key=int) + ["branco", "nulo"]
+    buf = io.StringIO()
+    w = csv.writer(buf, lineterminator="\n")
+    w.writerow(
+        ["t", "recebido", "uf", "cd_municipio_tse", "municipio", "zona", "secao",
+         "tipo_urna", "aptos", "comparecimento", *(f"votos_{v}" for v in votaveis)]
+    )
+    for sec in ordenadas:
+        w.writerow(
+            [_iso(series.instante(sec, inicio)), _iso(sec.recebido), sec.uf, sec.cd_municipio,
+             sec.nm_municipio, sec.zona, sec.secao, sec.tipo_urna, sec.aptos, sec.comparecimento,
+             *(sec.votos.get(v, 0) for v in votaveis)]
+        )
+    return buf.getvalue()
+
+
 def _commit_do_codigo() -> str | None:
     """Último commit que alterou o código do pipeline, ou None se há mudanças não commitadas.
 
@@ -85,8 +109,8 @@ def _fontes(manifesto: dict, ids: set[str]) -> list[dict]:
     ]
 
 
-def gerar(eleicao: Eleicao) -> dict[str, dict]:
-    """Retorna {caminho_publicado: objeto_json}."""
+def gerar(eleicao: Eleicao) -> dict[str, dict | str]:
+    """Retorna {caminho_publicado: objeto_json ou texto CSV}."""
     manifesto = json.loads((MANIFESTOS / f"{eleicao.id}.json").read_text())
     fontes_bweb = {f.id: RAW / f.destino for f in eleicao.fontes if f.tipo == "bweb"}
 
@@ -117,7 +141,7 @@ def gerar(eleicao: Eleicao) -> dict[str, dict]:
     for uf in sorted(por_uf):
         locais.append(("uf", uf, NOMES_UF[uf], por_uf[uf], {f"bweb-{uf}"}))
 
-    saida: dict[str, dict] = {}
+    saida: dict[str, dict | str] = {}
     for nivel, sigla, nome, subset, ids_fonte in locais:
         caminho = f"{base}/br" if nivel == "br" else f"{base}/br/{sigla.lower()}"
         ordenadas = series.ordenar(subset, inicio)
@@ -138,8 +162,14 @@ def gerar(eleicao: Eleicao) -> dict[str, dict]:
             links["filhos"] = [
                 {"href": f"{caminho}/{uf.lower()}/resumo.json", "name": uf} for uf in sorted(por_uf)
             ]
+            links["eventos"] = [
+                {"href": f"{caminho}/{uf.lower()}/eventos.csv", "name": uf} for uf in sorted(por_uf)
+            ]
         else:
             links["parent"] = {"href": f"{base}/br/resumo.json"}
+            links["eventos"] = {"href": f"{caminho}/eventos.csv"}
+            # eventos só por UF: o do Brasil seria a concatenação de todos
+            saida[f"{caminho}/eventos.csv"] = _eventos_csv(ordenadas, inicio, candidatos)
 
         comum = {
             "eleicao": eleicao_json,
@@ -206,11 +236,11 @@ def formatar(obj: dict) -> str:
     return "{\n" + ",\n".join(partes) + "\n}\n"
 
 
-def escrever(saida: dict[str, dict], dist: Path = DIST) -> None:
+def escrever(saida: dict[str, dict | str], dist: Path = DIST) -> None:
     for caminho, obj in saida.items():
         arq = dist / caminho.lstrip("/")
         arq.parent.mkdir(parents=True, exist_ok=True)
-        arq.write_text(formatar(obj))
+        arq.write_text(obj if isinstance(obj, str) else formatar(obj))
 
 
 def gerar_schemas() -> dict[str, dict]:

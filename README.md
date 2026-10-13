@@ -20,6 +20,7 @@ O TSE divulga o placar ao vivo, mas cada atualização substitui a anterior. Est
 /v1/eleicoes/{eleicao}/{cargo}/br/serie-minuto.json  placar acumulado a cada minuto
 /v1/eleicoes/{eleicao}/{cargo}/br/serie-pct.json     placar a cada 0,5% de seções apuradas
 /v1/eleicoes/{eleicao}/{cargo}/br/{uf}/...           o mesmo por UF (zz = exterior)
+/v1/eleicoes/{eleicao}/{cargo}/br/{uf}/eventos.csv   uma linha por seção, na ordem em que entrou no placar
 /v1/schema/*.schema.json                             JSON Schema de cada arquivo
 ```
 
@@ -32,6 +33,7 @@ Os dados são gerados por código, nunca editados à mão, e só são aceitos se
 - resultado final de cada local **idêntico, voto a voto,** aos datasets oficiais `votacao_candidato_munzona` e `detalhe_votacao_munzona`;
 - soma das UFs igual ao Brasil em todos os minutos;
 - séries que nunca diminuem e com votos = comparecimento ≤ aptos;
+- os eventos por seção reagregados reproduzem exatamente as séries;
 - reconstrução conferida com o placar gravado ao vivo na noite da eleição;
 - toda a saída válida contra o JSON Schema;
 - build reproduzível: as mesmas fontes e o mesmo código geram os mesmos bytes.
