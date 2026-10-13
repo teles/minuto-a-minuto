@@ -20,8 +20,12 @@ from pipeline.fetch import MANIFESTOS, RAIZ, RAW
 from pipeline.fontes import ELEICOES, Eleicao
 
 DIST = RAIZ / "dist"
-# Arquivos cuja mudança altera a saída; o commit registrado é o último que mexeu neles.
-CODIGO = ["pipeline", "pyproject.toml", "uv.lock"]
+# Arquivos cuja mudança pode alterar a saída; o commit registrado é o último que mexeu
+# neles. fetch.py e checar_fontes.py ficam de fora: só baixam e conferem fontes.
+CODIGO = [
+    "pipeline/build.py", "pipeline/bweb.py", "pipeline/fontes.py", "pipeline/oficial.py",
+    "pipeline/schemas.py", "pipeline/series.py", "pyproject.toml", "uv.lock",
+]
 PREFIXO = "/v1/eleicoes"
 FUSO = "-03:00"  # horário de Brasília (sem horário de verão desde 2019)
 PASSO_PCT = 0.5
